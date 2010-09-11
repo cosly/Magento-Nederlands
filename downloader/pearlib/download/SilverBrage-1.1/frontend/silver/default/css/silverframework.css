@@ -1,0 +1,223 @@
+
+
+body.silverframework-font-arial	{
+	font-family: Arial, Helvetica, sans-serif;
+}
+body.silverframework-font-arial-black	{
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+body.silverframework-font-comic-sans-ms	{
+	font-family: "Comic Sans MS", "Comic Sans MS", cursive;
+}
+body.silverframework-font-courier-new	{
+	font-family: "Courier New", Courier, monospace;
+}
+body.silverframework-font-georgia	{
+	font-family: Georgia, serif;
+}
+body.silverframework-font-impact	{
+	font-family: Impact, Charcoal, sans-serif;
+}
+body.silverframework-font-lucida-console	{
+	font-family: "Lucida Console", Monaco, monospace;
+}
+body.silverframework-font-lucida-sans-unicode	{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+body.silverframework-font-palatino-linotype	{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+body.silverframework-font-tahoma	{
+	font-family: Tahoma, Geneva, sans-serif;
+}
+body.silverframework-font-times-new-roman	{
+	font-family: "Times New Roman", serif;
+}
+body.silverframework-font-trebuchet-ms	{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+body.silverframework-font-verdana	{
+	font-family: Verdana, sans-serif;
+}
+body.silverframework-font-ms-sans-serif	{
+	font-family: "MS Sans Serif", Geneva, sans-serif;
+}
+body.silverframework-font-ms-serif	{
+	font-family: "MS Serif", "New York", serif;
+}
+
+.highslide-no-border img	{
+	border: 0 !important;
+}
+
+#silverframework-license a,
+#silverframework-license a:visited,
+#silverframework-license a:link	{
+	color: #0033CC !important;
+}
+
+
+
+.silverframework-product-tabs-container {
+	float: left;
+	width: 100%;
+}
+ul.silverframework-product-tabs {
+	margin: 0 0 0 8px;
+	float: left;
+	width: 100%;
+}
+ul.silverframework-product-tabs li {
+	display: inline;
+
+}
+ul.silverframework-product-tabs li a {
+	text-decoration: none;
+	float: left;
+	background-color: #f1f1f1;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;	
+	border: 1px solid #dedede;
+	border-bottom: 0;
+	margin-right: 10px;
+	padding: 4px 10px;
+}
+ul.silverframework-product-tabs li.silverframework-tab-active a,
+ul.silverframework-product-tabs li a:hover {
+	position: relative;
+	z-index: 101;
+	color: #666;
+	background-color: #fff;
+}
+.silverframework-product-tabs-content {
+	float: left;
+	width: 100%;
+	z-index: 100;
+	position: relative;
+	background-color: #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #dedede;
+	margin-top: -1px;
+}
+.silverframework-product-tabs-content div {
+	padding: 10px;
+}
+.silverframework-product-tabs-content h2 {
+	font-size: 1.1em;
+}
+.silverframework-tabs-default {
+	margin-bottom: 15px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #cecece;
+}
+
+ul.silverframework-leftmenu	{
+
+}
+
+li.silverframework-leftmenu-haschildren	{
+}
+
+li.silverframework-leftmenu-nochildren	{
+	padding-left: 20px;
+}
+
+li.silverframework-leftmenu-inactive a	{
+	font-weight: normal !important;
+}
+
+li.silverframework-leftmenu-active a	{
+	font-weight: bold;
+}
+
+ul.silverframework-leftmenu-level1	{
+	margin-left: 0px;
+}
+
+ul.silverframework-leftmenu-level2	{
+	margin-left: 3px;
+}
+
+ul.silverframework-leftmenu-level3	{
+	margin-left: 3px;
+}
+
+ul.silverframework-leftmenu-level1 li	{
+	margin-left: 5px;
+}
+
+.silverframework-leftmenu-loading	{
+	background-color: white;
+	opacity: .5;
+	filter: alpha(opacity=50);
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	background-image: url(../images/ajax-loader.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+a.silverframework-leftmenu-togglelink,
+a.silverframework-leftmenu-togglelink:link,
+a.silverframework-leftmenu-togglelink:visited	{
+	text-decoration: none;
+	font-size: 13px;
+}
+
+img.silverframework-leftmenu-toggleicon {
+	padding-right: 3px;
+	vertical-align: middle;
+}
+
+.silverframework-chooser {
+	position: relative;
+	z-index: 99999;
+	min-width: 150px;
+	font-size: 14px;
+}
+
+.silverframework-chooser ul {
+}
+
+li.silverframework-currency-chooser, 
+li.silverframework-storeview-chooser,
+li.silverframework-auto-dropdown {
+	padding-right: 12px; 
+	background: url('../images/arrow-down.png') 100% 55% no-repeat;
+}
+
+.silverframework-chooser ul	{
+	background-color:#fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #dfdfdf;
+	padding-bottom:4px;
+}
+
+.silverframework-chooser ul li	{
+	float: none !important;
+	text-align: left;
+	margin: 4px 10px !important;
+}
+
+.silverframework-chooser li a {display: block; margin-right: 10px;padding: 2px 0 2px 0; border-bottom: 1px dotted #f1f1f1;}
+.silverframework-chooser li.silverframework-chooser-last a {border: 0;}
+
+
+.silverframework-chooser li a,
+.silverframework-chooser li a:link,
+.silverframework-chooser li a:visited {
+	text-decoration: none;
+	color: #999;
+}
+.silverframework-chooser li a:hover {color: #000; text-decoration: none;}
+
+.silverframework-chooser li.silverframework-chooser-selected a {
+	background: url('../images/dropdown-selected.png') 98% 55% no-repeat;
+	color: #333;
+}

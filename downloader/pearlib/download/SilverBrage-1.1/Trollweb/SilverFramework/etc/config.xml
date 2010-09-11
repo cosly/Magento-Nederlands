@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Trollweb_SilverFramework>
+			<version>0.0.1</version>
+		</Trollweb_SilverFramework>
+	</modules>
+	
+	<frontend>
+		
+		<events>
+			<controller_action_layout_render_before>
+				<observers>
+					<update_body_class>
+						<type>singleton</type>
+						<class>trollweb_silverFramework_model_observer</class>
+						<method>updateBodyClassEvent</method>
+					</update_body_class>
+					<check_validity>
+						<type>singleton</type>
+						<class>trollweb_silverFramework_model_observer</class>
+						<method>checkValidity</method>
+					</check_validity>					
+				</observers>
+			</controller_action_layout_render_before>
+		</events>
+		
+		<routers>
+			<silverframework>
+				<use>standard</use>
+				<args>
+					<module>Trollweb_SilverFramework</module>
+					<frontName>silverframework</frontName>
+				</args>
+			</silverframework>
+		</routers>
+			
+		<layout>
+			<updates>
+				<silverframework>
+					<file>silverframework.xml</file>
+				</silverframework>
+			</updates>
+        </layout>		
+		
+		
+			
+			<translate>
+				<modules>
+					<Trollweb_SilverFramework>
+						<files>
+							<default>Trollweb_SilverFramework.csv</default>
+						</files>
+					</Trollweb_SilverFramework>
+				</modules>
+			</translate>		
+			
+		</frontend>
+		
+		<admin>
+			<routers>
+				<silverframework>
+					<use>admin</use>
+					<args>
+						<module>Trollweb_SilverFramework</module>
+						<frontName>silverframework</frontName>
+					</args>
+				</silverframework>
+        	</routers>		
+		</admin>
+		
+		
+		<adminhtml>
+			
+			
+			<menu>
+				<silverframework module="silverframework">
+					<title>SilverFramework</title>
+					<sort_order>71</sort_order>
+					<children>
+
+						<silverframework_settings module="silverframework">
+							<title>Settings</title>
+							<sort_order>10</sort_order>
+							<action>adminhtml/system_config/edit/section/silverframework_settings</action>
+						</silverframework_settings>
+
+						<content module="silverframework">
+							<title>Content</title>
+							<sort_order>30</sort_order>
+
+							<children>
+								<manage_customercenter module="silverframework">
+									<title>Edit header links (About, Conditions, etc)</title>
+									<sort_order>40</sort_order>
+									<action>silverframework/adminhtml_customercenter</action>
+								</manage_customercenter>
+								<manage_cmslinks module="silverframework">
+									<title>Edit horisontal menu links</title>
+									<sort_order>41</sort_order>
+									<action>silverframework/adminhtml_cmslinks</action>
+								</manage_cmslinks>
+								<manage_tabs module="silverframework">
+									<title>Edit product tabs</title>
+									<sort_order>42</sort_order>
+									<action>silverframework/adminhtml_tabs</action>
+								</manage_tabs>
+							</children>
+						</content>
+						
+						<silverframework_about module="silverframework">
+							<title>License &amp; About</title>
+							<sort_order>100</sort_order>
+							<action>adminhtml/system_config/edit/section/silverframework_about</action>
+						</silverframework_about>
+						
+					</children>
+				</silverframework>
+        </menu>			
+			
+			<acl>
+				<resources>
+					<admin>
+						<children>
+							<system>
+								<children>
+									<config>
+										<children>
+											<silverframework_general>
+												<title>SilverFramework general</title>
+											</silverframework_general>
+											<silverframework_seo>
+												<title>SilverFramework SEO</title>
+											</silverframework_seo>
+											<silverframework_layout>
+												<title>SilverFramework layout</title>
+											</silverframework_layout>
+											<silverframework_content>
+												<title>SilverFramework content</title>
+											</silverframework_content>
+											<silverframework_about>
+												<title>SilverFramework about</title>
+											</silverframework_about>															<silverframework_settings>
+												<title>SilverFramework settings</title>
+											</silverframework_settings>	
+										</children>
+									</config>
+								</children>
+							</system>
+						</children>
+					</admin>
+				</resources>
+			</acl> 
+	</adminhtml>		
+		
+		
+		<global>
+			<models>
+				<silverframework>
+					<class>Trollweb_SilverFramework_Model</class>
+					<resourceModel>silverframework_mysql4</resourceModel>
+				</silverframework>
+				
+				<silverframework_mysql4>
+					<class>Trollweb_SilverFramework_Model_Mysql4</class>
+					<entities>
+						<customercenter>
+							<table>silverframework_customercenter</table>
+						</customercenter>
+						<cmslinks>
+							<table>silverframework_cmslinks</table>
+						</cmslinks>
+						<tabs>
+							<table>silverframework_tabs</table>
+						</tabs>
+					</entities>
+				</silverframework_mysql4>
+			</models>
+			
+			<resources>
+				<silverframework_setup>
+					<setup>
+						<module>Trollweb_SilverFramework</module>
+						<class>Mage_Sales_Model_Mysql4_Setup</class>
+					</setup>
+					<connection>
+						<use>core_setup</use>
+					</connection>
+				</silverframework_setup>
+			</resources>
+			
+			
+			<blocks>
+				<silverframework><class>Trollweb_SilverFramework_Block</class></silverframework>
+			</blocks>
+			
+			<helpers>
+				<silverframework><class>Trollweb_SilverFramework_Helper</class></silverframework>
+			</helpers>
+		</global>
+		
+		<default>
+			<silverframework_settings>
+				<navigation>
+					<category_levels>1</category_levels>
+					<toggle_menu>1</toggle_menu>
+					<toggle_link_takeover>0</toggle_link_takeover>
+					<show_non_catalog>1</show_non_catalog>
+					<use_ajax>0</use_ajax>
+				</navigation>	
+				<header>
+					<enable_currency_chooser>1</enable_currency_chooser>
+					<enable_storeview_chooser>1</enable_storeview_chooser>
+				</header>
+				<footer>
+					<footer_text></footer_text>
+				</footer>
+				<product>
+					<zoom_type>highslide</zoom_type>
+					<zoom_captions>1</zoom_captions>
+					<zoom_pagination>1</zoom_pagination>
+					<highslide_border>1</highslide_border>
+					<share_product_page>sharethis</share_product_page>
+					<sharethis_publisher_id></sharethis_publisher_id>
+					<addthis_username></addthis_username>
+					<tabs_display>default</tabs_display>
+
+				</product>
+				<product_list>
+					<show_toolbar>top_and_bottom</show_toolbar>
+				</product_list>
+				<general>
+					<font_family>arial</font_family>
+				</general>
+				<callouts>
+					<left_callout_enable>1</left_callout_enable>
+					<left_callout_html></left_callout_html>
+					<right_callout_enable>1</right_callout_enable>
+					<right_callout_html></right_callout_html>
+				</callouts>	
+			</silverframework_settings>
+		</default>
+		
+</config>

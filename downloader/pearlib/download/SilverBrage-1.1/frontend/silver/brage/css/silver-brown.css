@@ -1,0 +1,37 @@
+
+/* Brage Green - #6d3100 */
+
+.customer-center {background-color: #dedede;}
+
+#nav-container,
+.breadcrumb-and-search,
+#nav li a:hover span,
+#nav li.active a,
+#nav li.over a,
+#nav li.over a span,
+#nav li a:hover,
+#nav li.over a span,
+#nav li.active a span,
+#nav li ul {
+	background-color:#6d3100;
+}
+
+.header-container {
+	border-top: 7px solid #6d3100;
+}
+.customer-center > ul,
+#nav li a,
+.form-search .button,
+.sidebar .block .block-title {
+	color: #6d3100;
+}
+#nav li a {
+	color: #666;
+}
+.sidebar .block {
+	border-top-color: #6d3100;
+	border-bottom-color: #6d3100;
+}
+.footer, .opc .step-title {
+	border-top-color: #6d3100;
+}

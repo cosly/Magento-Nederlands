@@ -1,0 +1,21 @@
+<?php
+
+$msg = base64_decode('PGRpdiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogcmVkOyBjb2xvcjogd2hpdGU7IHBhZGRpbmc6
+IDEwcHg7IiBpZD0ic2lsdmVyZnJhbWV3b3JrLWxpY2Vuc2UiPg0KICAgICAgICBVbmxpY2Vuc2Vk
+IHZlcnNpb24gb2YgU2lsdmVyRnJhbWV3b3JrLiBQbGVhc2UgcHVyY2hhc2UgYSB2YWxpZCBsaWNl
+bnNlIGZyb20gPGEgaHJlZj0iaHR0cDovL1tTRUxMRVJfRE9NQUlOXSI+W1NFTExFUl9ET01BSU5d
+PC9hPiBmb3IgdGhlIGRvbWFpbiA8c3Ryb25nPltET01BSU5dPC9zdHJvbmc+Lg0KICAgICAgICA8
+YnIvPlRoaXMgbWVzc2FnZSB3aWxsIGF1dG9tYXRpY2FsbHkgZGlzYXBwZWFyIGluIDEwIHNlY29u
+ZHMuDQo8L2Rpdj4NCjxzY3JpcHQ+DQpkb2N1bWVudC5vYnNlcnZlKCdkb206bG9hZGVkJywgZnVu
+Y3Rpb24oZSkgICAgICB7DQogICAgICAgIHNldFRpbWVvdXQoZnVuY3Rpb24oKSB7DQogICAgICAg
+ICAgICAgICAgJCgnc2lsdmVyZnJhbWV3b3JrLWxpY2Vuc2UnKS5oaWRlKCk7DQogICAgICAgIH0s
+IDEwMDAwKTsNCn0pOw0KPC9zY3JpcHQ+');
+
+$seller = 'www.silverframework.com';
+
+$msg = str_replace('[DOMAIN]', $_SERVER['SERVER_NAME'], $msg);
+$msg = str_replace('[SELLER_DOMAIN]', $seller, $msg);
+
+echo $msg;
+
+?>

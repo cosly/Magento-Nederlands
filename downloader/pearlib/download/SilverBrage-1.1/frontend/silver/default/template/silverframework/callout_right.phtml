@@ -1,0 +1,13 @@
+<?php
+$_silverHelper = Mage::helper('silverframework/silver');
+$_enable = $_silverHelper->settings['settings']['right_callout_enable'];
+$_html = $_silverHelper->settings['settings']['right_callout_html'];
+?>
+
+<?php if($_enable): ?>
+	<?php if($_html == ''): ?>
+		<?php echo $this->getLayout()->createBlock('core/template')->setTemplate('silverframework/callouts/right.phtml')->toHtml(); ?>
+	<?php else: ?>
+		<?php echo $_html; ?>
+	<?php endif; ?>
+<?php endif; ?>

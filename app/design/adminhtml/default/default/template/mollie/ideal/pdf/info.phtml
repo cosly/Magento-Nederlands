@@ -1,0 +1,10 @@
+<?php
+/**
+ * @category   design_default
+ * @package    OomensICT_Mollie
+ * @copyright  Copyright (c) 2009 Oomens ICT
+ */
+?>
+<?php echo $this->getMethod()->getTitle() ?>
+    {{pdf_row_separator}}
+<?php echo Mage::helper('mollie')->__('Bank: %s', $this->htmlEscape($this->getBankTitle())) ?>

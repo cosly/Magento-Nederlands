@@ -1,0 +1,151 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2009 Irubin Consulting Inc. DBA Varien (http://www.varien.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+
+<script type="text/javascript" src="<?php echo $this->getSkinUrl('js/highslide.js')?>"></script>
+
+<script type="text/javascript">
+	hs.graphicsDir = '<?php echo $this->getSkinUrl(); ?>highslide/graphics/';
+	hs.wrapperClassName = 'white-rounded-outline';
+</script>
+
+<script type="text/javascript">
+	Cufon.replace('.block-subtitle, .nav-container, .menu-left, .block-title span, h1, h2, h3');
+</script>
+
+<div class="header-container">
+    <div class="header">
+		<div class="header-bot">
+			<?php if ($this->getIsHomePage()):?>
+			<a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+			<?php else:?>
+			<a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+			<?php endif?>
+			<div class="delivery">
+				<a href="<?php echo $this->getSkinUrl('images/delivery.png')?>" class="highslide" onclick="return hs.expand(this)">
+					<img src="<?php echo $this->getSkinUrl('images/delivery.png')?>"  height="35" width="315" alt=""/>
+				</a>
+				
+				<div class="highslide-caption">
+					<img src="<?php echo $this->getSkinUrl('images/tick.gif')?>"  height="15" width="16" alt=""/>
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.<br/>
+					<img src="<?php echo $this->getSkinUrl('images/tick.gif')?>"  height="15" width="16" alt=""/>
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.<br/>
+					<img src="<?php echo $this->getSkinUrl('images/tick.gif')?>"  height="15" width="16" alt=""/>
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.<br/>
+					<img src="<?php echo $this->getSkinUrl('images/tick.gif')?>"  height="15" width="16" alt=""/>
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.
+					This caption can be styled using CSS.	
+				</div>
+			
+			</div>
+			<div class="help">
+				<a href="<?php echo $this->getSkinUrl('images/callus.png')?>" class="highslide" onclick="return hs.expand(this)">
+					<img src="<?php echo $this->getSkinUrl('images/callus_thum.png')?>"  height="34" width="115" alt=""/>
+				</a>
+				
+				<div class="highslide-caption">
+					<b>MageStore</b>
+					(84)4 6295.9562<br/>
+
+					<b>Open 7 days</b><br/>
+					Monday to Friday - 8am til 9pm<br/>
+					Saturday - 10am til 9pm<br/>
+					Sunday - 10am til 7pm<br/>
+
+					Please note that the sales line cannot necessarily help with after-sales enquiries<br/>
+
+					You can also contact us by creating a support ticket by clicking here.<br/>
+
+					Press Esc key to close this popup<br/>
+
+					
+
+						
+				</div>
+				<!--<span class="tel">0000-9999-0000</span><br/>
+				<span class="call">Call us for helps</span>-->
+			</div>
+			<div class="cart">
+				<img src="<?php echo $this->getSkinUrl('images/bag.png') ?>" onclick="setLocation('<?php echo $this->getUrl('checkout/cart') ?>')" alt="" />
+				<div class="infor">
+					
+					<?php echo $this->__('Shopping Bag')?>
+					<div class="clear"></div>
+					<?php
+						$_quote = Mage::getSingleton('checkout/session')->getQuote();
+						$_cartQty = $_quote->getItemsQty() * 1;
+						if($_cartQty == 0)
+						{
+							echo $this->__('<span class="number">0 </span> item in this bag');
+						}
+						else
+						{
+						echo $this->__('<a href="%s"><span class="number">%s </span><span>item in this bag</span></a>',$this->getUrl('checkout/cart'), $_cartQty);
+						//echo Mage::helper('checkout')->formatPrice($_quote->getSubtotal());
+						}
+					?>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<?php echo $this->getChildHtml('topSearch') ?>
+			<div class="top-nav">
+				<?php echo $this->getChildHtml('topLinks') ?>
+			</div>
+			
+			<?php echo $this->getChildHtml('topMenu') ?>
+			
+			
+			<!--<div class="quick-access">
+				<?php echo $this->getChildHtml('topSearch') ?>
+				<p class="welcome-msg"><?php echo $this->getWelcome()?></p>
+				<?php echo $this->getChildHtml('topLinks') ?>
+				<?php echo $this->getChildHtml('store_language') ?>
+			</div>-->
+			<?php echo $this->getChildHtml('topContainer'); ?>
+		</div>
+    </div>
+</div>
+

@@ -1,0 +1,14 @@
+<?php if($this->getCurrencyCount()>1): ?>
+				<li class="silverframework-currency-chooser"><a href="#"><?php echo $this->__('Currency'); ?></a>
+					<div class="silverframework-chooser" style="display: none;">
+						<ul>			
+							<?php $_counter = 0; ?>
+							<?php $_count = $this->getCurrencyCount(); ?>
+							<?php foreach ($this->getCurrencies() as $_code => $_name): ?>
+								<li class="<?php if($_counter++ == 0): ?>silverframework-chooser-first <?php elseif($_counter == $_count): ?>silverframework-chooser-last <?php endif; ?><?php if($_code==$this->getCurrentCurrencyCode()): ?>silverframework-chooser-selected<?php endif; ?>">
+									<a href="<?php echo $this->getSwitchCurrencyUrl($_code) ?>"><?php echo $_name ?></a>
+								</li>
+							<?php endforeach; ?>
+						</ul>
+					</div>
+<?php endif; ?>

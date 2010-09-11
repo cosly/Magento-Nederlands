@@ -1,0 +1,14 @@
+<?php
+/**
+ * @category   design_default
+ * @package    OomensICT_Mollie
+ * @copyright  Copyright (c) 2009 Oomens ICT
+ */
+?>
+<?php if($_info = $this->getInfo()): ?>
+<?php echo $this->getMethod()->getTitle() ?>
+<br />
+<?php echo $this->__('Bank'). ': ' . $this->getBankTitle() ?>
+<?php else: ?>
+
+<?php endif; ?>

@@ -1,0 +1,35 @@
+
+/* Brage Black - #000 */
+
+.customer-center {background-color: #dedede;}
+
+#nav-container,
+.breadcrumb-and-search,
+#nav li a:hover span,
+#nav li.active a,
+#nav li.over a,
+#nav li.over a span,
+#nav li a:hover,
+#nav li.over a span,
+#nav li.active a span,
+#nav li ul {
+	background-color:#000;
+}
+
+.header-container {
+	border-top: 7px solid #000;
+}
+.customer-center > ul,
+#nav li a,
+.form-search .button,
+.sidebar .block .block-title {
+	color: #000;
+}
+
+.sidebar .block {
+	border-top-color: #000;
+	border-bottom-color: #000;
+}
+.footer, .opc .step-title {
+	border-top-color: #000;
+}

@@ -1,0 +1,259 @@
+body {
+	background: url('../images/background.jpg') top left repeat-x;
+}
+
+.main-container {
+	background-color: #fff;
+	padding: 0 8px;
+	min-height: 400px;
+}
+.main-container {
+	margin-top: 0;
+	padding-top: 1em;
+}
+
+.header-container {
+	background-color: #fff;
+	border-top: 7px solid #16253B;
+	margin-top: 10px;
+	width: 976px;
+}
+
+
+.nav-container {
+	width: 976px;
+}
+.header {
+	padding: 0;
+}
+
+.logo {
+	margin-left: 15px;
+}
+.header .logo {
+	margin-top: 0;
+}
+
+.quick-access {margin: 35px 15px 0 0;}
+.customer-center {
+	width: 100%;
+	padding: 6px 8px 0 8px;
+	height: 29px;
+	background: #c7d619 url('../images/header-line_background.png') top left repeat-x;
+	float: right;
+}
+
+.customer-center > ul {
+	float: right;
+	margin-right: 8px;
+	margin-top: 3px;
+	color: #16253B;
+}
+
+.customer-center ul li {}
+
+.customer-center a {
+	text-decoration: none;
+}
+
+.customer-center .welcome-msg {
+	float: left;
+	padding-left: 15px;
+	margin-top: 3px;
+	font-weight: bold;
+}
+
+.nav-container {
+	background-color: #fff;
+}
+
+#nav {
+	background-color: #fff;
+	margin-left: 15px;
+}
+#nav li {
+	padding:0;
+	height:30px;
+	float:left;
+	letter-spacing: 0.2px;
+}
+#nav li a {
+	float:left;
+	height:30px;
+	line-height:30px;
+	margin-right: 2px;
+	background: #f1f1f1 url('../images/rounded-corners-transparent.png') top left no-repeat;
+	color: #16253B;
+	padding-left: 20px;
+}
+#nav li a span {
+	background: #f1f1f1 url('../images/rounded-corners-transparent.png') top right no-repeat;
+	padding-right: 20px;
+}
+#nav li.first a {}
+#nav li.last a {
+	/* border-right:0; */
+}
+#nav li a span {
+	float:left;
+}
+#nav li a {
+}
+#nav li.over a,
+#nav li.over a span,
+#nav li a:hover,
+#nav li a:hover span {
+	background-color: #16253B; color:#fff;
+	
+}
+
+#nav li.active a span,
+#nav li.parent a span,
+#nav li a:hover span {
+	padding: 0; padding-right: 20px;
+}
+#nav li.over a {
+}
+#nav li.active a {
+	background-color: #16253B; color:#fff;
+}
+#nav li.over a span,
+#nav li.active a span {
+	background-color: #16253B;
+}
+
+
+
+/* 2nd level */
+#nav li ul {
+	background-color:#16253B;
+	border: 1px solid #b2b2b2;
+	border-top:0;
+	margin-left: 1px;
+}
+
+#nav ul li {
+	padding: 0 12px;
+}
+
+#nav ul li.parent:hover,
+#nav ul li:hover {
+	background: url('../images/menu-arrow.png') 2% 50% no-repeat;
+}
+#nav ul li.parent {
+		background: url('../images/menu-arrow.png') 98% 50% no-repeat;
+}
+
+#nav li ul li {}
+#nav li ul li a {
+	color: #fff;
+}
+#nav ul li,
+#nav ul li a,
+#nav ul li a span,
+#nav ul li.over a,
+#nav ul li.over a span,
+#nav ul li.active a span,
+#nav ul li a:hover,
+#nav ul li a:hover span {
+	background: none;
+	color:#fff;
+}
+#nav ul li.active a {color:#666;}
+
+/* 3rd level and up */
+#nav li ul li ul {border: 1px solid #b2b2b2;}
+
+.breadcrumb-and-search {
+	background-color:#16253B;
+	width: 960px;
+	padding: 0 8px;
+	margin: 0px auto;
+	color: #fff;
+	height: 40px;
+	padding-top: 10px;
+	text-align: left;
+}
+.breadcrumb-and-search .form-search {
+	float: right;
+}
+.breadcrumb-and-search .breadcrumbs {
+	margin: 5px 0 0 25px;
+	width: 630px;
+	float: left;
+}
+.breadcrumb-and-search a {
+	color: #fff;
+}
+.form-search .input-text { width:215px; height: 20px; background: url('../images/search_background.png') top left no-repeat; border: 0; padding: 7px 5px 5px; font-size: 14px; color: #666; overflow: hidden;float: left;}
+.form-search .button {
+	color: #16253b;
+	padding-bottom: 3px;
+	float: left;
+	border: 0;
+	background: url('../images/search_button.png') top left no-repeat;
+	width: 67px;
+	height: 30px;
+}
+
+.sidebar .block {
+	background-color:#F0F0F0;
+	border-top:3px solid #16253B;
+	border-bottom: 1px solid #16253B;
+}
+.sidebar .block .block-title {
+	padding-left: 7px;
+	font-size: 0.9em;
+	color: #16253B;
+}
+.cart .discount, .cart .shipping {
+	border: 1px solid #cecece;
+	background-color:#f1f1f1;
+}
+.header .links li {
+	padding-left: 7px;
+	margin-left: 8px;
+	border-left: 1px solid #999;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+.header .links li.first {
+	border: 0;
+}
+.form-search label {
+	display: none;
+}
+.sorter, .pager {
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #16253B;
+	border-top: 1px solid #16253B;	
+}
+
+.opc .step-title {
+	border-top: 2px solid #16253B;
+	background-color: #f1f1f1;
+}
+.opc .active .step-title h2 {
+	font-weight: bold;
+}
+.account-login .content {
+	border: 1px solid #16253B;
+	background-color: #f1f1f1;
+}
+
+.footer-container {
+	background-color: transparent;
+	border: 0;	
+}
+.footer {
+	border-top: 5px solid #16253B;
+	padding: 10px 8px;
+}
+.products-grid li.item {
+	padding-bottom: 90px;
+}
+.products-grid .product-name {
+	font-size: 1.1em;
+}
+
+

@@ -1,0 +1,83 @@
+<?php $_product = $this->getProduct(); ?>
+<?php $_items = $this->getReviewsCollection()->getItems();?>
+<script type="text/javascript">
+	function	add_new_review() {
+		$('customer-reviews').hide();
+		$('customer-reviews-form').show();
+		$('customer_no_reviews').hide();
+	}
+</script>	
+<div id="customer-reviews" class="collateral-box dedicated-review-box" <?php echo ( count($_items) > 0 ? '' : 'style="display: none;"' );  ?>>
+	<p class="action-link"><a href="javascript:;" onclick="add_new_review();"><?php echo $this->__('Add to your review') ?></a></p>
+	<div class="tab-scroll-box">
+		<?php if ( count($_items)) : ?>
+			<ul class="ratings">
+			<?php foreach ( $_items as $_review ) : ?>
+			<li class="clearfix" style="margin-bottom:10px;">
+				<div class="rating-content">
+					<p class="author"><strong><?php echo $this -> htmlEscape( $_review -> getNickname() ); ?></strong> - <?php echo $this -> __( '%s', $this -> formatDate( $_review -> getCreatedAt() ), 'long' ) ?>:</p>
+					<div class="content">
+						<h4><?php echo $this -> htmlEscape( $_review -> getTitle() ); ?></h4>
+						<p><?php echo nl2br( $this -> htmlEscape( $_review -> getDetail() ) ); ?></p>
+					</div>
+					<?php						
+					$_review_counter = 0;					
+					?>
+				</div>
+					<div class="rating-out-box">										
+						<?php foreach ( $_review -> getRatingVotes() as $_vote ) : ?>						
+							<div class="rating-row">											
+								<strong><?php echo $_vote -> getRatingCode() ?></strong>														
+								<div class="rating-box">																
+									<div class="rating" style="width: <?php echo $_vote -> getPercent() ?>%;"></div>																	
+								</div>										
+							</div>														
+							<?php $_review_counter+= $_vote -> getPercent(); ?>													
+						<?php endforeach; ?>										
+					</div>
+					<!-- rating -->									
+					<img src="media/pos<?php echo ( ($_review_counter/3) >= 50 ? '' : '-no' ) ?>.jpg" alt="" class="calification" />								
+				</li>								
+			<?php endforeach; ?>			
+			</ul>				
+		<?php endif;?>
+	</div>
+	<!-- tab-scroll-box -->
+</div>
+
+<!-- customer-reviews -->
+<div id="customer_no_reviews" <?php echo ( count($_items) == 0 ? '' : 'style="display: none;"' );  ?>>
+	<div id="jouw_button">
+		<a href="" onclick="javascript:add_new_review();return false;"><span><?php echo $this->__('Be the first to review this product');?></span></a>
+	</div>
+</div>
+
+<div id="customer-reviews-form" class="collateral-box dedicated-review-box" style="display:none;">
+	<script type="text/javascript">
+		function back_to_reviews() {
+			<?php
+			if(count($_items) == 0)
+			{
+			?>
+				$('customer-reviews-form').hide();			
+				$('customer-reviews').hide();
+				$('customer_no_reviews').show();
+			<?php
+			}
+			else
+			{
+			?>
+				$('customer-reviews-form').hide();
+				$('customer-reviews').show();
+				$('customer_no_reviews').hide();
+			<?php
+			}
+			?>			
+		}	
+	</script>	
+	<div class="tab-scroll-box">
+		<?php echo $this -> getChildHtml('review_form'); ?>
+	</div>
+	<!-- tab-scroll-box -->
+</div>
+<!-- customer-reviews-form -->

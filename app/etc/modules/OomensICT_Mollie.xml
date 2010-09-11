@@ -1,0 +1,19 @@
+<config>
+    <modules>
+				<!-- declare OomensICT_Mollie module -->
+        <OomensICT_Mollie>
+						<!-- this is an active module -->
+            <active>true</active>
+						<!-- this module will be located in app/code/local code pool -->
+            <codePool>local</codePool>
+						<!-- specify dependencies for correct module loading order -->
+            <depends>
+                <Mage_Payment />
+            </depends>
+						<!-- declare module's version information for database updates -->
+            <version>0.2.2</version>
+        </OomensICT_Mollie>
+    </modules>
+</config>
+      
+      

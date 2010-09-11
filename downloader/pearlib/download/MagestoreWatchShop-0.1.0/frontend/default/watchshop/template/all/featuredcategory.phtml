@@ -1,0 +1,11 @@
+<?php $categories = $this->getFeaturedCategories(); ?>
+<?php if($categories): ?>
+<div class="category">
+	<?php $i=1;foreach($categories as $category): ?>
+	<a <?php if($i%3 == 1){echo 'class="first"';}else{if($i%3 == 0){echo 'class="last"';}} ?> href="<?php echo $category->getUrl() ?>">
+		<img src="<?php echo $category->getImageUrl(); ?>" alt="<?php echo $category->getName() ?>" title="<?php echo $category->getName() ?>" />
+	</a>
+	<?php $i++; ?>
+	<?php endforeach; ?>
+</div>
+<?php endif; ?>

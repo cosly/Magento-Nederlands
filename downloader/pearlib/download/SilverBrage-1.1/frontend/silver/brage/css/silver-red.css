@@ -1,0 +1,35 @@
+
+/* Brage Red - #b71600 */
+
+.customer-center {background-color: #dedede;}
+
+#nav-container,
+.breadcrumb-and-search,
+#nav li a:hover span,
+#nav li.active a,
+#nav li.over a,
+#nav li.over a span,
+#nav li a:hover,
+#nav li.over a span,
+#nav li.active a span,
+#nav li ul {
+	background-color:#b71600;
+}
+
+.header-container {
+	border-top: 7px solid #b71600;
+}
+.customer-center > ul,
+#nav li a,
+.form-search .button,
+.sidebar .block .block-title {
+	color: #b71600;
+}
+
+.sidebar .block {
+	border-top-color: #b71600;
+	border-bottom-color: #b71600;
+}
+.footer, .opc .step-title {
+	border-top-color: #b71600;
+}

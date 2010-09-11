@@ -1,0 +1,29 @@
+<script src="<?php echo $this->getJsUrl().'magestore/jquery.js'; ?>" type="text/javascript"></script>
+<script src="<?php echo $this->getJsUrl().'magestore/jquery.scrollShow.js' ?>" type="text/javascript"></script>
+<script src="<?php echo $this->getJsUrl().'magestore/jquery.scrollTo-min.js' ?>" type="text/javascript"></script>
+<script src="<?php echo $this->getJsUrl().'magestore/slider-config.js' ?>" type="text/javascript"></script>
+<?php $products = $this->getFeaturedProduct(); ?>
+<?php if($products): ?>
+<ul id="screen">
+	<li><a id="left" href="#"></a></li>
+	<li id="view"> 
+		<ul id="images">
+			<?php foreach($products as $product): ?>
+			<li>
+				<div class="cms-index-index index-pro-infor">
+					<h1><?php echo $this->getManufacturerName($product->getId())->getName(); ?></h1>
+					<h2 class="product-name">
+						<a href="<?php echo $product->getProductUrl() ?>"><?php echo $this->htmlEscape(Mage::getModel('catalog/product')->load($product->getId())->getName()) ?></a>
+					</h2>
+				</div>
+				<?php echo $this->getPriceHtml(Mage::getModel('catalog/product')->load($product->getId()), true) ?>
+				<a href="<?php echo $product->getProductUrl() ?>">
+					<img src="<?php echo $this->helper('catalog/image')->init(Mage::getModel('catalog/product')->load($product->getId()), 'small_image')->resize(180); ?>" alt="<?php echo $this->htmlEscape(Mage::getModel('catalog/product')->load($product->getId())->getName()) ?>" title="<?php echo $this->htmlEscape(Mage::getModel('catalog/product')->load($product->getId())->getName()) ?>" />
+				</a>
+			</li>
+			<?php endforeach; ?>
+		</ul>
+	</li>
+	<li><a id="right" href="#"></a></li>
+</ul>
+<?php endif; ?>

@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>MagestoreWatchShop</name>
+ <channel>connect.magentocommerce.com/community</channel>
+ <summary>WatchShopTemplate</summary>
+ <description>WatchShopTemplate</description>
+ <lead>
+  <name>trung</name>
+  <user>magestore</user>
+  <email>trungnv@magestore.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-09-09</date>
+ <time>08:25:11</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/osl-3.0.php">http://www.opensource.org/licenses/osl-3.0.php</license>
+ <notes>
+WatchShop Template
+ </notes>
+ <contents>
+  <dir name="/">
+   <dir name="frontend\default\watchshop">
+    <file md5sum="88733ee53676a47fc354a61c32516e82" name="favicon.ico" role="mageskin" />
+   </dir> <!-- /frontend\default\watchshop -->
+   <dir name="frontend\default\watchshop\css">
+    <file md5sum="8fb344f131b419f575669a486e23e561" name="highslide-ie6.css" role="mageskin" />
+    <file md5sum="165e5541c8e505e46f0e2e15a968afd7" name="highslide.css" role="mageskin" />
+    <file md5sum="fc74bd29bdcbed43b2a0caa854215b41" name="manufacturer.css" role="mageskin" />
+    <file md5sum="1fcdb0360aa63b5629d1bb26f19040e4" name="print.css" role="mageskin" />
+    <file md5sum="c0ea7dc50c76d2aa0fffcb4949420caf" name="styles-ie.css" role="mageskin" />
+    <file md5sum="72606a3726e07711891761b5b64e20f2" name="styles.css" role="mageskin" />
+    <file md5sum="ba907b38427a1cf06a1ea05c9eceaf6c" name="tabs.css" role="mageskin" />
+    <file md5sum="27156f19202d09552b57202829293243" name="vssver.scc" role="mageskin" />
+   </dir> <!-- /frontend\default\watchshop\css -->
+   <dir name="frontend\default\watchshop\css\magestore">
+    <file md5sum="4752e40971eaaa41fcc283858568e38b" name="faq.css" role="mageskin" />
+    <file md5sum="27c8a0c4ce8d74ffbdfd21e07ee70dc2" name="vssver.scc" role="mageskin" />
+   </dir> <!-- /frontend\default\watchshop\css\magestore -->
+   <dir name="frontend\default\watchshop\etc">
+    <file md5sum="ea6e704d92085e229426f78698e40d8b" name="vssver.scc" role="magedesign" />
+    <file md5sum="d9e06667d48d89006f211f07bebcdc09" name="widget.xml" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\etc -->
+   <dir name="frontend\default\watchshop\highslide\graphics">
+    <file md5sum="f2aace763cfcc4d6f3427a8a0842e55c" name="close.png" role="mageskin" />
+    <file md5sum="5979393fee5912ed58e4e1cb243c6aaf" name="closeX.png" role="mageskin" />
+    <file md5sum="5a89a1b9cc794774b86320bace66619e" name="controlbar-black-border.gif" role="mageskin" />
+    <file md5sum="9a3369f2da46fbcebd8ba9de264def59" name="controlbar-text-buttons.png" role="mageskin" />
+    <file md5sum="97dab61a692b0fddeb349fa44492b674" name="controlbar-white-small.gif" role="mageskin" />
+    <file md5sum="5ceda771cfa0177a7cf28e0232957a73" name="controlbar-white.gif" role="mageskin" />
+    <file md5sum="d18d67cce12f07c3387c1d514152c8f9" name="controlbar2.gif" role="mageskin" />
+    <file md5sum="70430a53d8dd9fea57722257c064f62b" name="controlbar3.gif" role="mageskin" />
+    <file md5sum="1022bb6d5276de482b9570d2ef85fd8f" name="controlbar4-hover.gif" role="mageskin" />
+    <file md5sum="88ed3dff55b51e1d801953dc2c108d22" name="controlbar4.gif" role="mageskin" />
+    <file md5sum="51f5b9066c1db13dd9dca00839d8ded2" name="fullexpand.gif" role="mageskin" />
+    <file md5sum="513a4d4ab1100f245ea16e5ed3ed9437" name="geckodimmer.png" role="mageskin" />
+    <file md5sum="ac6c8a2011306f1cc2b0e06cc9479a83" name="icon.gif" role="mageskin" />
+    <file md5sum="0c86519befd78c191429622a2eb475f2" name="loader.gif" role="mageskin" />
+    <file md5sum="2a6692973429d7a74513bfa8bcb5be20" name="loader.white.gif" role="mageskin" />
+    <file md5sum="434a98116b3b89ba9edd97b9b9590776" name="resize.gif" role="mageskin" />
+    <file md5sum="65b96b8282b8a1165b75b4b1188a6b54" name="scrollarrows.png" role="mageskin" />
+    <file md5sum="bdc84b2bd5b71ebf773f9fa66ea8d994" name="vssver.scc" role="mageskin" />
+    <file md5sum="805e9d70e907f9b8151c43357de8af77" name="zoomin.cur" role="mageskin" />
+    <file md5sum="e5f236bf2b60f8c8fc1867d70636a046" name="zoomout.cur" role="mageskin" />
+   </dir> <!-- /frontend\default\watchshop\highslide\graphics -->
+   <dir name="frontend\default\watchshop\highslide\graphics\outlines">
+    <file md5sum="ca59a9192306cae7aebd81cb1ee91cd5" name="beveled.png" role="mageskin" />
+    <file md5sum="ee5645967777496a696074e74b284509" name="drop-shadow.png" role="mageskin" />
+    <file md5sum="a2320d41679a101b64652930124a2624" name="glossy-dark.png" role="mageskin" />
+    <file md5sum="66739de35113613e5409996e10739cdf" name="outer-glow.png" role="mageskin" />
+    <file md5sum="24879db4897ba32ab0a875940971db9b" name="Outlines.psd" role="mageskin" />
+    <file md5sum="c04a6054786ba1ec48c1acb14ac035f6" name="rounded-black.png" role="mageskin" />
+    <file md5sum="ee5645967777496a696074e74b284509" name="rounded-white.png" role="mageskin" />
+    <file md5sum="ce9f748a4f56289eec4732c4c3950439" name="vssver.scc" role="mageskin" />
+   </dir> <!-- /frontend\default\watchshop\highslide\graphics\outlines -->
+   <dir name="frontend\default\watchshop\images">
+    <file md5sum="ed280a0ea3cc38f3cbbc747acfbef47d" name="0.gif" role="mageskin" />
+    <file md5sum="c2a515b10d5d162c976eed6e3a0b20cc" name="1.png" role="mageskin" />
+    <file md5sum="d987f21b4e3087ab983e049c3c57852b" name="2.png" role="mageskin" />
+    <file md5sum="5034d2e9b14b904894083b00d989632f" name="3.png" role="mageskin" />
+    <file md5sum="80d3958885034fcabb1fd150693a1fb6" name="4.png" role="mageskin" />
+    <file md5sum="6b1af88712f6ae721c8a2aeb810760e8" name="5.png" role="mageskin" />
+    <file md5sum="b12e6ac8a99af7277ad55fa555621446" name="bag.png" role="mageskin" />
+    <file md5sum="68d45250638fbd2bb3acf49c413793b6" name="bg.gif" role="mageskin" />
+    <file md5sum="6edbbcd79ef5b766d7672ac6496f9e90" name="bg_top-nav.gif" role="mageskin" />
+    <file md5sum="084caff661ab85d3a5778006af15783a" name="bg_top-nav.png" role="mageskin" />
+    <file md5sum="088552bf8dcb79be2493f002a281519e" name="bg_topnav-hover.gif" role="mageskin" />
+    <file md5sum="4d634badcb0ec34a91099ed4a44b6be2" name="bg_topnav.gif" role="mageskin" />
+    <file md5sum="9ea619465b54f2a2618e654183961245" name="bg_topnav_sub-hover.png" role="mageskin" />
+    <file md5sum="dab3400e3cd1e84bb3661fbdbecbb750" name="bg_topnav_sub-hover_old.gif" role="mageskin" />
+    <file md5sum="bd8326d0aa6a58c5cea98c2991f0ec89" name="bkg-top-menu-children.gif" role="mageskin" />
+    <file md5sum="b8c3d92a3c379bb2b75e3fb221ec9aca" name="bkg_acc.gif" role="mageskin" />
+    <file md5sum="ee7a7b0cfcfd9d5ca1f1d6ae1e1f4833" name="bkg_bot-acc.gif" role="mageskin" />
+    <file md5sum="75f8e0b378b0247c3ef6f68f5fc074e5" name="bkg_bot-acc.png" role="mageskin" />
+    <file md5sum="0840409dd760d36ac6ebb8180c4f3f58" name="bkg_bot-dropdown.gif" role="mageskin" />
+    <file md5sum="2a68f50ce46bccf8a46e0f800dff08f4" name="bkg_bot-dropdown.png" role="mageskin" />
+    <file md5sum="2f0c55c9e2e078a73fdbd2541255e043" name="bkg_bot-login.png" role="mageskin" />
+    <file md5sum="68b43bce16c7f2591d6b1197e64fd1da" name="bkg_bot-why-us.gif" role="mageskin" />
+    <file md5sum="b9feb73255b09f517b296f0a790e2215" name="bkg_cart.png" role="mageskin" />
+    <file md5sum="68dabfec4ba252388440c529e1af1661" name="bkg_contacts.gif" role="mageskin" />
+    <file md5sum="87467ac371b4143fabe59cce2d8ebe2f" name="bkg_header-bot.jpg" role="mageskin" />
+    <file md5sum="2f9bbb3d2c375074b4ffd9d5e6500d66" name="bkg_input-login.png" role="mageskin" />
+    <file md5sum="4f53eb1ee783e604d064bf123fd21567" name="bkg_input-newsletter.png" role="mageskin" />
+    <file md5sum="89ca5256ac59ea09e267370b8bdc743f" name="bkg_input-qty.gif" role="mageskin" />
+    <file md5sum="f0a48de5246887691929281d7d37d055" name="bkg_input-qty.png" role="mageskin" />
+    <file md5sum="b6e866ca684fab47c6a29fc384f997b5" name="bkg_input-search.gif" role="mageskin" />
+    <file md5sum="6e83baeb7cec05b2c60a86c4548fca9f" name="bkg_input-search.png" role="mageskin" />
+    <file md5sum="c881cf250712bbd637cfcd1b4eecb014" name="bkg_input-search_old.png" role="mageskin" />
+    <file md5sum="a8b955cedcad73b9e7498563eab44812" name="bkg_left-menu-cat.gif" role="mageskin" />
+    <file md5sum="69e59c45c846519e7134534bdfadcb37" name="bkg_left-menu-cat.png" role="mageskin" />
+    <file md5sum="4424d5d163b28d23db57651540383542" name="bkg_left-menu-sub-cat.gif" role="mageskin" />
+    <file md5sum="d331488cb0450407982620496bd102c0" name="bkg_left-menu-sub-cat.png" role="mageskin" />
+    <file md5sum="c822a514089b2c64fb1ef26a9f8fd165" name="bkg_login.gif" role="mageskin" />
+    <file md5sum="12fd64e3542dfd6dd14fb7ca679d9390" name="bkg_main2.gif" role="mageskin" />
+    <file md5sum="16b7c406f174b891d7aa6848e156c73d" name="bkg_newsletter.gif" role="mageskin" />
+    <file md5sum="6414304150e4f2cf6123771f05720f0e" name="bkg_newsletter.png" role="mageskin" />
+    <file md5sum="342c3474d4727469dd5276358cb9afbc" name="bkg_rating.gif" role="mageskin" />
+    <file md5sum="7208260bb28331f0ca272b1d5f8f2d04" name="bkg_rating.png" role="mageskin" />
+    <file md5sum="aa6fb935050d3d5a5ebfe23663aeb797" name="bkg_short-by.gif" role="mageskin" />
+    <file md5sum="90893efb7f40eb603bb701ddf83cf082" name="bkg_short-by.png" role="mageskin" />
+    <file md5sum="0fcbde7ec1248cce6d58c935312bfdc5" name="bkg_textarea.png" role="mageskin" />
+    <file md5sum="d46551c852206ad178aafc72da0135b8" name="bkg_toolbar-pager.gif" role="mageskin" />
+    <file md5sum="40034c79dfb749d32d5d4296d8120b77" name="bkg_toolbar-pager.png" role="mageskin" />
+    <file md5sum="43893ee2250c33013d01fb737d566fab" name="bkg_toolbar-sorter.gif" role="mageskin" />
+    <file md5sum="4e82f82c6053d42a44b9f527a08fd333" name="bkg_toolbar-sorter.png" role="mageskin" />
+    <file md5sum="68b43bce16c7f2591d6b1197e64fd1da" name="bkg_top-acc.gif" role="mageskin" />
+    <file md5sum="088552bf8dcb79be2493f002a281519e" name="bkg_top-menu-hover.gif" role="mageskin" />
+    <file md5sum="46cc1d26a5a99005cc44395f7402290a" name="bkg_top-menu-sub-hover.gif" role="mageskin" />
+    <file md5sum="c31fcd5fd33e50df465447b5738a79e8" name="bkg_top-menu-sub-hover.jpg" role="mageskin" />
+    <file md5sum="9ea619465b54f2a2618e654183961245" name="bkg_top-menu-sub-hover.png" role="mageskin" />
+    <file md5sum="370744a930d65241cbf07803fb8a7f9f" name="bkg_top-menu-sub-last.gif" role="mageskin" />
+    <file md5sum="1a6360eb54490429c5da33324600689e" name="bkg_top-menu-sub-last.png" role="mageskin" />
+    <file md5sum="b854e34b5ee12c9e24dc9ff66418f4ff" name="bkg_top-menu-sub.gif" role="mageskin" />
+    <file md5sum="23593b757a7ac1461878110fb245741e" name="bkg_top-menu-sub.png" role="mageskin" />
+    <file md5sum="3f2b5a0b569bb5d9fa343072de56bc96" name="bkg_top-menu-sub_a.png" role="mageskin" />
+    <file md5sum="23593b757a7ac1461878110fb245741e" name="bkg_top-menu-sub_old.png" role="mageskin" />
+    <file md5sum="4d634badcb0ec34a91099ed4a44b6be2" name="bkg_top-menu.gif" role="mageskin" />
+    <file md5sum="6edbbcd79ef5b766d7672ac6496f9e90" name="bkg_top-nav.gif" role="mageskin" />
+    <file md5sum="8404f19311a63cf426ccb56a086341bd" name="bra_bellross.gif" role="mageskin" />
+    <file md5sum="89bbebc5acb77cf6edcb901b57098a09" name="bra_bellross_old.gif" role="mageskin" />
+    <file md5sum="a372bb2d57126b650a85c86683e62e67" name="bra_chopard.gif" role="mageskin" />
+    <file md5sum="094c80952a1a7026e22563047eb34e8d" name="bra_chopard_.gif" role="mageskin" />
+    <file md5sum="33a7f8f0ec879d48d0567db9a32c9fb8" name="bra_longines.gif" role="mageskin" />
+    <file md5sum="1a08eeb7be994153bc99a049cb8ddc9d" name="bra_rolex.gif" role="mageskin" />
+    <file md5sum="0e322350e5c6f0798f4f03c3104bff84" name="bra_tagheuer.gif" role="mageskin" />
+    <file md5sum="3db03c91cb0ed9f0376ee5e2514ef4df" name="brd_addon-menu.png" role="mageskin" />
+    <file md5sum="6d8ebc05a452c28e94dd317f498f575d" name="brd_contact.png" role="mageskin" />
+    <file md5sum="d34b4a6cf3e2ab1b1b2f64ca010eb458" name="brd_login.png" role="mageskin" />
+    <file md5sum="8030e37ade973da37344051e9b92a2b2" name="brd_pro-list.jpg" role="mageskin" />
+    <file md5sum="bd37890980116c6b9f401de0aaa7793c" name="brd_pro-list.png" role="mageskin" />
+    <file md5sum="19b5d6d49d878dd7059f9c121825cc62" name="brd_pro-view.gif" role="mageskin" />
+    <file md5sum="073d6c2aec8111ea7d4cd88ea4e463a1" name="brd_pro-view.png" role="mageskin" />
+    <file md5sum="9fbd58a75cda89a509ea40508acaf97a" name="brd_short-by.jpg" role="mageskin" />
+    <file md5sum="c2f7daae8d9687065cabe60277f00632" name="btn-search.png" role="mageskin" />
+    <file md5sum="c84278c3cfba798f25846a87c1a20cd7" name="btn-search_24.png" role="mageskin" />
+    <file md5sum="c84278c3cfba798f25846a87c1a20cd7" name="btn-search_old.png" role="mageskin" />
+    <file md5sum="59e0e57bd102ac4526d374db383d50b2" name="btn.gif" role="mageskin" />
+    <file md5sum="4f185ca4e8096c9e28f14deffe6cf0b7" name="btn.png" role="mageskin" />
+    <file md5sum="e724301528606544d7f69c46c46402bf" name="btn_add-cart.png" role="mageskin" />
+    <file md5sum="7f4f102ca91b469d8f7f1b141668b9d1" name="btn_add-cart_2.png" role="mageskin" />
+    <file md5sum="658b83b86fdb9daea06064301d0dd949" name="btn_apply.png" role="mageskin" />
+    <file md5sum="ebc12b997925375fc10251ac1fe02721" name="btn_checkout.png" role="mageskin" />
+    <file md5sum="f3541aefd80d348ae1c77d6a69988308" name="btn_continue.png" role="mageskin" />
+    <file md5sum="3d603d70abc26a31ab1bc8a3de9b0ee5" name="btn_continue_shopping.png" role="mageskin" />
+    <file md5sum="e8dac43f6ebe69ec7d97b8c05c7665b6" name="btn_login.png" role="mageskin" />
+    <file md5sum="15398bd09ca2be7bb393cdee33bcb64e" name="btn_login_2.png" role="mageskin" />
+    <file md5sum="e85b1f2d4b9c7a023504d69aa71481f1" name="btn_newsletter.gif" role="mageskin" />
+    <file md5sum="ce5f0c48e4ab32bd4ed4b0d1f4cfa6f3" name="btn_newsletter.png" role="mageskin" />
+    <file md5sum="b99dcd898c54e671a3e2bdc32893281f" name="btn_newsletter_2.png" role="mageskin" />
+    <file md5sum="1f2804b7ce1acab826f69736fc3c3ef5" name="btn_next.gif" role="mageskin" />
+    <file md5sum="f5ab236855a70b48bc4b760f92644c6e" name="btn_next.png" role="mageskin" />
+    <file md5sum="ed6f2b88e553dcbbad4666c8a4b41eeb" name="btn_prev.gif" role="mageskin" />
+    <file md5sum="f34b1d26865dddd93f28a6d0c61f1d08" name="btn_prev.png" role="mageskin" />
+    <file md5sum="7fd9894e5640869cd52004b931c3ab59" name="btn_recovery.png" role="mageskin" />
+    <file md5sum="7b79d72cf19e92d8f2db69e23282225f" name="btn_update.png" role="mageskin" />
+    <file md5sum="25ab57c82fa9fda7ef146211e0de6638" name="callus.png" role="mageskin" />
+    <file md5sum="f97c902c8a330f0b0ef7adbac0b20d7b" name="callus_new.png" role="mageskin" />
+    <file md5sum="998889e6c501a874024033f94f826ea1" name="callus_thum.png" role="mageskin" />
+    <file md5sum="760f43d29170d778ab2a0870b2767a01" name="cat_casio.png" role="mageskin" />
+    <file md5sum="6580cab68a477eb669c2ee132f157094" name="cat_citizen.png" role="mageskin" />
+    <file md5sum="42e25c03eca4298b33112268661a8e0f" name="cat_guess.png" role="mageskin" />
+    <file md5sum="e52ad852107762db2d79465f552ad364" name="cat_police.png" role="mageskin" />
+    <file md5sum="19aeae317c227e0b22c0b3ca63d2b889" name="cat_seiko.png" role="mageskin" />
+    <file md5sum="86b5b5c031c66fea6def09bab85c44ff" name="cat_tissot.png" role="mageskin" />
+    <file md5sum="221d8352905f2c38b3cb2bd191d630b0" name="clear.gif" role="mageskin" />
+    <file md5sum="d80b8b82af293b47cde2e2fa92e8fa85" name="content-corner-left-bot.gif" role="mageskin" />
+    <file md5sum="549948226cf2d3b21f6be6250f842750" name="content-corner-left-top.gif" role="mageskin" />
+    <file md5sum="135cc98c04664a0f9f9004f1f95fcc6c" name="content-corner-right-bot.gif" role="mageskin" />
+    <file md5sum="c79551772feb3debab50f9704e87f71f" name="content-corner-right-top.gif" role="mageskin" />
+    <file md5sum="5ab3cc04e9e11e9b6f6b18e122ae8dad" name="delete_product.gif" role="mageskin" />
+    <file md5sum="8f7c91e85373276d7935f1a187d2d5e6" name="delivery.png" role="mageskin" />
+    <file md5sum="ad119004916985a011e26c4d4a5c81ff" name="faq_search_bar.jpg" role="mageskin" />
+    <file md5sum="2f9360b3aaab98850694b7e4bb795179" name="faq_search_bar.png" role="mageskin" />
+    <file md5sum="ff1b0a04367039b55b585b5f093496b4" name="home.jpg" role="mageskin" />
+    <file md5sum="6dbf83568b7876401ca56c9f31a14ff2" name="i_asc_arrow.gif" role="mageskin" />
+    <file md5sum="9f96f4a64ab0c67264d9f3f3eb3e0f1c" name="i_asc_arrow.png" role="mageskin" />
+    <file md5sum="878b93391ba642fdb2c0d6e054c118f2" name="i_desc_arrow.gif" role="mageskin" />
+    <file md5sum="a3a2b20042d7d7c1542e4f8da04f2798" name="i_desc_arrow.png" role="mageskin" />
+    <file md5sum="32e82d23ca99941eef6cf46b45412591" name="i_drop.png" role="mageskin" />
+    <file md5sum="32e82d23ca99941eef6cf46b45412591" name="i_dropdown.png" role="mageskin" />
+    <file md5sum="8a144996c3bef42a17940325b55db508" name="i_drop_limiter.jpg" role="mageskin" />
+    <file md5sum="6f26911a4aba34d7b39e6d11174f8053" name="i_drop_sorter.jpg" role="mageskin" />
+    <file md5sum="6cf351a0a681e2dfba3d40b635eb3e32" name="i_face.png" role="mageskin" />
+    <file md5sum="3fa07eb5d63815e689ab55926d792f02" name="i_list.png" role="mageskin" />
+    <file md5sum="97126dea62fd16c1d7a85dcbb3838eb6" name="i_magestore.png" role="mageskin" />
+    <file md5sum="8fe08bce32a160a82e0f783527f52450" name="i_stock.gif" role="mageskin" />
+    <file md5sum="41e06469d19e7e9e85d699b5b942285b" name="i_stock.png" role="mageskin" />
+    <file md5sum="8e5a74ae8699642ccba6cc8c8dce7aa9" name="i_tick-stock.png" role="mageskin" />
+    <file md5sum="d0ace1258f0ffeb96d04f99a426ad4d7" name="i_twister.png" role="mageskin" />
+    <file md5sum="c24d308f342e0bf86a0e3d4052044fd4" name="logo.gif" role="mageskin" />
+    <file md5sum="9845294f0aed67fdb97160e439137443" name="logo.png" role="mageskin" />
+    <file md5sum="fdf94258bec6107ce6528ae5aeca3a5b" name="magnifier_handle.gif" role="mageskin" />
+    <file md5sum="6520f24d662d49857324c0871e47522f" name="magnifier_handle.png" role="mageskin" />
+    <file md5sum="991709fbbfe2368ae690acedc1b6911d" name="pro-cart.gif" role="mageskin" />
+    <file md5sum="b1645d5cc8b1125489c377ccaf54c84e" name="pro-cart.png" role="mageskin" />
+    <file md5sum="eaefdd958133fa4c65c492a43958e2a3" name="pro_1.png" role="mageskin" />
+    <file md5sum="335a5ae2d52cb2adcd5d5dcb70e981d5" name="pro_2.png" role="mageskin" />
+    <file md5sum="d79c30c70c841b1ff17a7fcaa3215bf4" name="pro_3.png" role="mageskin" />
+    <file md5sum="b11cd0e771b1fe337406a36d04d6f896" name="pro_4.png" role="mageskin" />
+    <file md5sum="bf45c76b24c673a7262a91befa5d7769" name="quote_emp.jpg" role="mageskin" />
+    <file md5sum="c7c415888a933ec89a8c7e323ccb6328" name="quote_emp.png" role="mageskin" />
+    <file md5sum="1cf8e6e326ae608074ad2beacbbd9887" name="quote_left.png" role="mageskin" />
+    <file md5sum="4cc5aa8277be3b97f13204b1126ce7ec" name="quote_right.png" role="mageskin" />
+    <file md5sum="798952b8b1ddd7c2f8d3d1ba11a1599c" name="search.gif" role="mageskin" />
+    <file md5sum="60be55b47c0786952b22e902363977c6" name="select-left.gif" role="mageskin" />
+    <file md5sum="dc426c7c39e3ba07e7f4ab43a9b85a85" name="select-right.gif" role="mageskin" />
+    <file md5sum="ac5ee2c8b16784fc7b4cd0eee718d772" name="slider_bg.gif" role="mageskin" />
+    <file md5sum="d89b162bb520f19e778c1b4f1cd04df4" name="slider_btn_zoom_in.gif" role="mageskin" />
+    <file md5sum="19e97caacff514afa4a1300e47d4ad4a" name="slider_btn_zoom_out.gif" role="mageskin" />
+    <file md5sum="658a14a1abf20e3a7a0cb4fca043931b" name="tabs-footer.gif" role="mageskin" />
+    <file md5sum="8c2486568cfe617d9350ed3d590bec0b" name="tabs-footer.png" role="mageskin" />
+    <file md5sum="afb4e98681536d940ffc31c8464ba56d" name="tabs_pv.gif" role="mageskin" />
+    <file md5sum="1a07758daa4ce673adcaaeb5f74ae4fc" name="tabs_pv.png" role="mageskin" />
+    <file md5sum="6a5b27994ef1b84154149669fa40ab2e" name="tabs_pv_active.gif" role="mageskin" />
+    <file md5sum="73ea3668c38f188610847f15f72ee7d6" name="tabs_pv_active.png" role="mageskin" />
+    <file md5sum="0a708557c7c08a02545910eed4e814d6" name="tab_content.gif" role="mageskin" />
+    <file md5sum="a43b79247ebc7b70124ec546221f1967" name="tab_content.png" role="mageskin" />
+    <file md5sum="1d5c1ca83e8365fff9ab84316e0a9d40" name="tab_list_bg.gif" role="mageskin" />
+    <file md5sum="e35290678a3a991471125d966e9cc7bc" name="tick.gif" role="mageskin" />
+    <file md5sum="fe7c409ff5f3f92e1443f5cbe8a1718f" name="tick.png" role="mageskin" />
+    <file md5sum="900ecddb1baad4e2705c61c2cab31778" name="ticker.png" role="mageskin" />
+    <file md5sum="08218ab20da83a71051b64974f92400f" name="Untitled-1.gif" role="mageskin" />
+    <file md5sum="9d0117cce79e5cd242be83753329d042" name="vssver.scc" role="mageskin" />
+   </dir> <!-- /frontend\default\watchshop\images -->
+   <dir name="frontend\default\watchshop\images\graphics">
+    <file md5sum="f2aace763cfcc4d6f3427a8a0842e55c" name="close.png" role="mageskin" />
+    <file md5sum="5979393fee5912ed58e4e1cb243c6aaf" name="closeX.png" role="mageskin" />
+    <file md5sum="5a89a1b9cc794774b86320bace66619e" name="controlbar-black-border.gif" role="mageskin" />
+    <file md5sum="9a3369f2da46fbcebd8ba9de264def59" name="controlbar-text-buttons.png" role="mageskin" />
+    <file md5sum="97dab61a692b0fddeb349fa44492b674" name="controlbar-white-small.gif" role="mageskin" />
+    <file md5sum="5ceda771cfa0177a7cf28e0232957a73" name="controlbar-white.gif" role="mageskin" />
+    <file md5sum="d18d67cce12f07c3387c1d514152c8f9" name="controlbar2.gif" role="mageskin" />
+    <file md5sum="70430a53d8dd9fea57722257c064f62b" name="controlbar3.gif" role="mageskin" />
+    <file md5sum="1022bb6d5276de482b9570d2ef85fd8f" name="controlbar4-hover.gif" role="mageskin" />
+    <file md5sum="88ed3dff55b51e1d801953dc2c108d22" name="controlbar4.gif" role="mageskin" />
+    <file md5sum="51f5b9066c1db13dd9dca00839d8ded2" name="fullexpand.gif" role="mageskin" />
+    <file md5sum="513a4d4ab1100f245ea16e5ed3ed9437" name="geckodimmer.png" role="mageskin" />
+    <file md5sum="ac6c8a2011306f1cc2b0e06cc9479a83" name="icon.gif" role="mageskin" />
+    <file md5sum="0c86519befd78c191429622a2eb475f2" name="loader.gif" role="mageskin" />
+    <file md5sum="2a6692973429d7a74513bfa8bcb5be20" name="loader.white.gif" role="mageskin" />
+    <file md5sum="434a98116b3b89ba9edd97b9b9590776" name="resize.gif" role="mageskin" />
+    <file md5sum="65b96b8282b8a1165b75b4b1188a6b54" name="scrollarrows.png" role="mageskin" />
+    <file md5sum="8e274e74ba9edc88dbf2224016aa12b4" name="vssver.scc" role="mageskin" />
+    <file md5sum="805e9d70e907f9b8151c43357de8af77" name="zoomin.cur" role="mageskin" />
+    <file md5sum="e5f236bf2b60f8c8fc1867d70636a046" name="zoomout.cur" role="mageskin" />
+   </dir> <!-- /frontend\default\watchshop\images\graphics -->
+   <dir name="frontend\default\watchshop\images\graphics\outlines">
+    <file md5sum="ca59a9192306cae7aebd81cb1ee91cd5" name="beveled.png" role="mageskin" />
+    <file md5sum="ff904e99a0ecb32a27642d389adb91ba" name="drop-shadow.png" role="mageskin" />
+    <file md5sum="a2320d41679a101b64652930124a2624" name="glossy-dark.png" role="mageskin" />
+    <file md5sum="66739de35113613e5409996e10739cdf" name="outer-glow.png" role="mageskin" />
+    <file md5sum="24879db4897ba32ab0a875940971db9b" name="Outlines.psd" role="mageskin" />
+    <file md5sum="c04a6054786ba1ec48c1acb14ac035f6" name="rounded-black.png" role="mageskin" />
+    <file md5sum="c3ca9c4d471747ae3e5f12f1b7baaf69" name="vssver.scc" role="mageskin" />
+   </dir> <!-- /frontend\default\watchshop\images\graphics\outlines -->
+   <dir name="frontend\default\watchshop\js">
+    <file md5sum="8c8424116a7c84a6b6b57c021ea0776f" name="easySlider1.5.js" role="mageskin" />
+    <file md5sum="cea490be8fb68b93bb25931f2e1dc354" name="highslide-with-html.js" role="mageskin" />
+    <file md5sum="b3933cf9d2992f4350afdfc216a1b9fe" name="highslide.js" role="mageskin" />
+    <file md5sum="84fd11ee152be4198b99b51e2bbe7152" name="img_popup.js" role="mageskin" />
+    <file md5sum="e4af2b4805203f1ac490ad67531b848b" name="jquery-latest.js" role="mageskin" />
+    <file md5sum="0f1f95e19fa4640a7e011ccb0425b396" name="jquery.jNice.js" role="mageskin" />
+    <file md5sum="649ee479ee768297aa7105ba06ecdd53" name="jquery.js" role="mageskin" />
+    <file md5sum="649ee479ee768297aa7105ba06ecdd53" name="jquery_.js" role="mageskin" />
+    <file md5sum="de564027c44cb74f52a63b0655b79825" name="jquery_silde.js" role="mageskin" />
+    <file md5sum="09471974265aa815fd01f3df5030b5c7" name="play.js" role="mageskin" />
+    <file md5sum="b0b5d0f7c0f5515958a7626cb7705171" name="pngHover.js" role="mageskin" />
+    <file md5sum="ec526251c79eb2455cd9738ed08dc840" name="tabs.js" role="mageskin" />
+    <file md5sum="56b0150b5a172f4327db5b916e520626" name="vssver.scc" role="mageskin" />
+   </dir> <!-- /frontend\default\watchshop\js -->
+   <dir name="frontend\default\watchshop\layout">
+    <file md5sum="f71e6b9f93669c26fec1b292c36a977a" name="all.xml" role="magedesign" />
+    <file md5sum="713acaee83b4536d7186cb7afaef01e1" name="bundle.xml" role="magedesign" />
+    <file md5sum="ad6dafb4a14f2f79c94b817686ac4d37" name="catalog.xml" role="magedesign" />
+    <file md5sum="ec7723fb8dad489753f81b5c3423f433" name="catalogsearch.xml" role="magedesign" />
+    <file md5sum="beb9237f42695749fe23dc9aadabd0e0" name="centinel.xml" role="magedesign" />
+    <file md5sum="1f44f44c65eebf24bc58242c2fa88eff" name="checkout.xml" role="magedesign" />
+    <file md5sum="9cae2e6bfd4f8414b413a8a42eacfe6f" name="cms.xml" role="magedesign" />
+    <file md5sum="dd318d5c7c37a32a1f5242d8e69ceb1b" name="contacts.xml" role="magedesign" />
+    <file md5sum="477e2634fe1611c2890cc60e2abe33ca" name="core.xml" role="magedesign" />
+    <file md5sum="6500c467e63b8975211d75911efb3704" name="customer.xml" role="magedesign" />
+    <file md5sum="2f239bcc8eaa527aebbb0da5df22846c" name="directory.xml" role="magedesign" />
+    <file md5sum="bb553fec2eee2fb7e1b4595ef10977dc" name="downloadable.xml" role="magedesign" />
+    <file md5sum="92f10651c7115e23e3b10152d412666d" name="faq.xml" role="magedesign" />
+    <file md5sum="f1c5debb7e71b46b03c70d176304b001" name="googleanalytics.xml" role="magedesign" />
+    <file md5sum="429836b6888643cbffa36b2a8a7362d0" name="googlecheckout.xml" role="magedesign" />
+    <file md5sum="6b0ff44cd6b467d4618996a281c62b31" name="googleoptimizer.xml" role="magedesign" />
+    <file md5sum="46f3f0fb3fb9457b888f121c49ac3b35" name="manufacturer.xml" role="magedesign" />
+    <file md5sum="80babadf83679af768eb2d851154f36e" name="moneybookers.xml" role="magedesign" />
+    <file md5sum="8c914baf7236507c2b3f5b3fc818642f" name="newsletter.xml" role="magedesign" />
+    <file md5sum="79b1a880c297182f011eb91a7884845e" name="page.xml" role="magedesign" />
+    <file md5sum="6ef7a8e5471de960e9b24d1f861ea8c5" name="paypal.xml" role="magedesign" />
+    <file md5sum="732556f67f461b3c22064012bb1e3738" name="paypaluk.xml" role="magedesign" />
+    <file md5sum="22af43987524e7648256c050e1c58271" name="poll.xml" role="magedesign" />
+    <file md5sum="ce45dbc14007bc353f285a305e700b99" name="productalert.xml" role="magedesign" />
+    <file md5sum="2cd7db0d66d7364c4f912b07737c796b" name="reports.xml" role="magedesign" />
+    <file md5sum="16b5cfafc0d83aa99206eb069efc9ce2" name="review.xml" role="magedesign" />
+    <file md5sum="b7bd7556e7a219ebf392a887e2c39391" name="rss.xml" role="magedesign" />
+    <file md5sum="744e7ae5e09535e713f58ac5951dc1bf" name="sales.xml" role="magedesign" />
+    <file md5sum="6b9948b4a69fdee6e3c73dd4f5579068" name="sendfriend.xml" role="magedesign" />
+    <file md5sum="5e16b551fa9892a8464da30ff32dc909" name="shipping.xml" role="magedesign" />
+    <file md5sum="f8336b25117d522544c3ecb3f7e1b84f" name="tag.xml" role="magedesign" />
+    <file md5sum="3a90017a88bcdc376aca222fbe8e27d5" name="vssver.scc" role="magedesign" />
+    <file md5sum="23dcb0a5905ba04a75892ec29e044121" name="weee.xml" role="magedesign" />
+    <file md5sum="4119203e1fba39a25c6e52c8da5248dd" name="wishlist.xml" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\layout -->
+   <dir name="frontend\default\watchshop\template\all">
+    <file md5sum="c42afdcfccb4db64d5c2b4e8fd35b4d4" name="featurebrand.phtml" role="magedesign" />
+    <file md5sum="633d338862edd63286f756500cf82e88" name="featuredcategory.phtml" role="magedesign" />
+    <file md5sum="b39178df2b475e1e97386cfbdb0b3e7d" name="featuredproduct.phtml" role="magedesign" />
+    <file md5sum="9822e88073ab85d3f1b3cbf61fb66eab" name="featuredproduct_.phtml" role="magedesign" />
+    <file md5sum="2247dd878acddcb885b81cbd26699bca" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\all -->
+   <dir name="frontend\default\watchshop\template\bundle\catalog\product">
+    <file md5sum="c31d924bd605622999738b9b2b3f5bbb" name="price.phtml" role="magedesign" />
+    <file md5sum="e19db704511232770415304a90a7a5cf" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\bundle\catalog\product -->
+   <dir name="frontend\default\watchshop\template\bundle\catalog\product\list">
+    <file md5sum="cb082d8847b6f0b3d5c75af20f311a75" name="partof.phtml" role="magedesign" />
+    <file md5sum="249504e55dbcc3dd0a15baa6bfa4827e" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\bundle\catalog\product\list -->
+   <dir name="frontend\default\watchshop\template\bundle\catalog\product\view">
+    <file md5sum="389338effaceaee794869f55f4a9a942" name="price.phtml" role="magedesign" />
+    <file md5sum="e7a6ebffea4ce3bece55e73a62acc375" name="tierprices.phtml" role="magedesign" />
+    <file md5sum="c7e0e80431e7f4a42a64176a89ec259e" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\bundle\catalog\product\view -->
+   <dir name="frontend\default\watchshop\template\bundle\catalog\product\view\type">
+    <file md5sum="e29ec44780b43e59b9b0d25012ed9a13" name="bundle.phtml" role="magedesign" />
+    <file md5sum="fd06d8abc59e01c6865a1c0d333820f9" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\bundle\catalog\product\view\type -->
+   <dir name="frontend\default\watchshop\template\bundle\catalog\product\view\type\bundle">
+    <file md5sum="7dac130fbb4c8bf706bd646e96d8224d" name="options.phtml" role="magedesign" />
+    <file md5sum="ce043ecb2dafa1a6453add211c3b0006" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\bundle\catalog\product\view\type\bundle -->
+   <dir name="frontend\default\watchshop\template\bundle\catalog\product\view\type\bundle\option">
+    <file md5sum="507b7e038debebe86793bab032d8df0d" name="checkbox.phtml" role="magedesign" />
+    <file md5sum="4d8d53981e239b664f6ff37ae713ab31" name="multi.phtml" role="magedesign" />
+    <file md5sum="6ed9b4ab99cfa0e1e9263f1b5d1e3b60" name="radio.phtml" role="magedesign" />
+    <file md5sum="c6be21ad451668e75159cb2e636186f9" name="select.phtml" role="magedesign" />
+    <file md5sum="8111d5d7845f7d3308142f636ca14792" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\bundle\catalog\product\view\type\bundle\option -->
+   <dir name="frontend\default\watchshop\template\bundle\email\order\items\creditmemo">
+    <file md5sum="8b4105a1e1d42cccf49d582561dbed4a" name="default.phtml" role="magedesign" />
+    <file md5sum="45ce08a838d95ebd4f571ec0f94199d1" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\bundle\email\order\items\creditmemo -->
+   <dir name="frontend\default\watchshop\template\bundle\email\order\items\invoice">
+    <file md5sum="f67a5b157720512ecea4226c6f88f846" name="default.phtml" role="magedesign" />
+    <file md5sum="b104a9c51fce9d7a652898bbef841cbc" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\bundle\email\order\items\invoice -->
+   <dir name="frontend\default\watchshop\template\bundle\email\order\items\order">
+    <file md5sum="840252477e127a0ea5066151b5a48c48" name="default.phtml" role="magedesign" />
+    <file md5sum="20c22e0e09b6a8edc1790548b24239e3" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\bundle\email\order\items\order -->
+   <dir name="frontend\default\watchshop\template\bundle\email\order\items\shipment">
+    <file md5sum="23e8b8fbcea29d76851314b69fc3fa81" name="default.phtml" role="magedesign" />
+    <file md5sum="215fc63ecc8c898ff9db42ea741ed574" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\bundle\email\order\items\shipment -->
+   <dir name="frontend\default\watchshop\template\bundle\rss\catalog\product">
+    <file md5sum="1e4ec4746e9802c8bddb14d3a7e5b8ee" name="price.phtml" role="magedesign" />
+    <file md5sum="7fbf437fa83428daa342509c3f93e0fa" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\bundle\rss\catalog\product -->
+   <dir name="frontend\default\watchshop\template\bundle\sales\order\creditmemo\items">
+    <file md5sum="28a20e6cb5097a1c2b7c9b83ad7aa554" name="renderer.phtml" role="magedesign" />
+    <file md5sum="01dc5fe919b995cb0a083eab5246694f" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\bundle\sales\order\creditmemo\items -->
+   <dir name="frontend\default\watchshop\template\bundle\sales\order\invoice\items">
+    <file md5sum="7c8d0fc52f2c8036d43b6df7cee1d254" name="renderer.phtml" role="magedesign" />
+    <file md5sum="e0bb76c35af864517f8f8fec7f514181" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\bundle\sales\order\invoice\items -->
+   <dir name="frontend\default\watchshop\template\bundle\sales\order\items">
+    <file md5sum="109b6c5b762c1a5c9a44627837949e05" name="renderer.phtml" role="magedesign" />
+    <file md5sum="7b46e6b61c4e8b4407ebd90e6368a23a" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\bundle\sales\order\items -->
+   <dir name="frontend\default\watchshop\template\bundle\sales\order\shipment\items">
+    <file md5sum="cf27c51c84b902d6361e16204dad7ea3" name="renderer.phtml" role="magedesign" />
+    <file md5sum="9114d7eb6783fbd404be913282a3ddba" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\bundle\sales\order\shipment\items -->
+   <dir name="frontend\default\watchshop\template\callouts">
+    <file md5sum="73e413af5a0628b671cf1df356129ecd" name="left_col.phtml" role="magedesign" />
+    <file md5sum="73e413af5a0628b671cf1df356129ecd" name="right_col.phtml" role="magedesign" />
+    <file md5sum="f8cd0feb7bb6f7461b5f3e7d1604ea84" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\callouts -->
+   <dir name="frontend\default\watchshop\template\catalogsearch">
+    <file md5sum="1c36f3c60100c035e7bfbe56b8d80a8b" name="form.mini.phtml" role="magedesign" />
+    <file md5sum="76806d0b963c5fc3c939acaea6445a82" name="result.phtml" role="magedesign" />
+    <file md5sum="04b5ed8e9e985cbb1cff10435d830013" name="term.phtml" role="magedesign" />
+    <file md5sum="dc9343ca0ba857a379a560453b23b113" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalogsearch -->
+   <dir name="frontend\default\watchshop\template\catalogsearch\advanced">
+    <file md5sum="f5d7b076bf69128528201069695f83ad" name="form.phtml" role="magedesign" />
+    <file md5sum="95c796c6fc7956ad60e56e450282c415" name="result.phtml" role="magedesign" />
+    <file md5sum="08fc51aa0daabbc359884e8d37a0072f" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalogsearch\advanced -->
+   <dir name="frontend\default\watchshop\template\catalog\category">
+    <file md5sum="41451be052a34190f889870767979ed6" name="page.phtml" role="magedesign" />
+    <file md5sum="9d5e13019377dbd6f3912f04b9b584c2" name="view.phtml" role="magedesign" />
+    <file md5sum="673504bf93c01c1cd6f692c87b7022ed" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\category -->
+   <dir name="frontend\default\watchshop\template\catalog\category\widget\link">
+    <file md5sum="a67f4817cc3f5a5ef1ce8570eb11038b" name="link_block.phtml" role="magedesign" />
+    <file md5sum="0ae12d7daebfda26c5c9b68eced13b83" name="link_inline.phtml" role="magedesign" />
+    <file md5sum="186f189b781d3e8028614e44e5b4e9b5" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\category\widget\link -->
+   <dir name="frontend\default\watchshop\template\catalog\layer">
+    <file md5sum="ce1cdd2ec675c59b9f3e1458223004b9" name="filter.phtml" role="magedesign" />
+    <file md5sum="76c0e7bfd6a3a32ff52fdd541f144b0a" name="state.phtml" role="magedesign" />
+    <file md5sum="01dc714ab33d1b859afb4f6318fc5e37" name="view.phtml" role="magedesign" />
+    <file md5sum="eb5233e817a69e8fb16bd142cb4c7385" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\layer -->
+   <dir name="frontend\default\watchshop\template\catalog\navigation">
+    <file md5sum="c75a0f90eb434597c23aa11046f16559" name="left.phtml" role="magedesign" />
+    <file md5sum="b526041fb3ac0521cf4dfe527074faf5" name="left_nav.phtml" role="magedesign" />
+    <file md5sum="dbf1b408733981cd0e61c2ac9a166aea" name="top.phtml" role="magedesign" />
+    <file md5sum="f9409db9719990a2736f60cabefc84da" name="top_old.phtml" role="magedesign" />
+    <file md5sum="b38ed6229c40c755929b58d6b988ecf9" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\navigation -->
+   <dir name="frontend\default\watchshop\template\catalog\product">
+    <file md5sum="104fde62b3c83e5716a47059e05fe0f4" name="gallery.phtml" role="magedesign" />
+    <file md5sum="18542689a69a23d5bbc330414621ee79" name="list.phtml" role="magedesign" />
+    <file md5sum="f023467fb7e28148ec2a73e9dcb04cfc" name="new.phtml" role="magedesign" />
+    <file md5sum="eed5cfcf7f1d2df7633348561f3485a8" name="price.phtml" role="magedesign" />
+    <file md5sum="ff1be4ee05a03ce1521e4b38e1457558" name="view.phtml" role="magedesign" />
+    <file md5sum="9b7d5e28afc44f3b8b2f8ca860d2e4c4" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\product -->
+   <dir name="frontend\default\watchshop\template\catalog\product\compare">
+    <file md5sum="fa8df878905d0e1abc5ec75f3f130433" name="list.phtml" role="magedesign" />
+    <file md5sum="4985ec2340c3719cf3aaaea2dcddb2df" name="sidebar.phtml" role="magedesign" />
+    <file md5sum="fb5321d145f975c4d2a30ba59ce63989" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\product\compare -->
+   <dir name="frontend\default\watchshop\template\catalog\product\list">
+    <file md5sum="4e41da94aa85667d09696de80aab6d05" name="related.phtml" role="magedesign" />
+    <file md5sum="a2588643a42ae29135552e0389024f72" name="toolbar.phtml" role="magedesign" />
+    <file md5sum="2ded5f5d0771ff566222886ff627267a" name="toolbar_.phtml" role="magedesign" />
+    <file md5sum="467176dcf50430a9ba0aaf8bd623572d" name="upsell.phtml" role="magedesign" />
+    <file md5sum="f1c772e1c451e84cc5af43d89db610b2" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\product\list -->
+   <dir name="frontend\default\watchshop\template\catalog\product\view">
+    <file md5sum="ca6c8cba0c1bb523d95e14eabd999e51" name="additional.phtml" role="magedesign" />
+    <file md5sum="c0198ff57db94d017dc1e9e673fbd916" name="addto.phtml" role="magedesign" />
+    <file md5sum="a225d18c68e3bccdbe4d8fbca841cce4" name="addtocart.phtml" role="magedesign" />
+    <file md5sum="a5e5430c4b66bfa595f69f4306256f0d" name="attributes.phtml" role="magedesign" />
+    <file md5sum="54a1a9c296e5076b3658d7b55d842eea" name="description.phtml" role="magedesign" />
+    <file md5sum="94625e179c3f024907192d1253a3e7c5" name="media.phtml" role="magedesign" />
+    <file md5sum="cadeb141572a86cd9ac61d052e0697ae" name="options.phtml" role="magedesign" />
+    <file md5sum="46b546f3103cbcceb1b57ff60cbfd2c3" name="price.phtml" role="magedesign" />
+    <file md5sum="1d41197c043f4915736abe3fb4308337" name="price_clone.phtml" role="magedesign" />
+    <file md5sum="1a54397481d2264c106eb6e08d2e3fbd" name="tierprices.phtml" role="magedesign" />
+    <file md5sum="1ccfedfa564fa4026869b80da932cb47" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\product\view -->
+   <dir name="frontend\default\watchshop\template\catalog\product\view\options">
+    <file md5sum="57696730660adf24002a3448ab2d8431" name="js.phtml" role="magedesign" />
+    <file md5sum="53a4b31b96cef59e787988bde6b184f9" name="vssver.scc" role="magedesign" />
+    <file md5sum="35b6c048e28f342fd4467538ff7b97e4" name="wrapper.phtml" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\product\view\options -->
+   <dir name="frontend\default\watchshop\template\catalog\product\view\options\type">
+    <file md5sum="6bd005bd78945d133c32b3c2bfe6033a" name="date.phtml" role="magedesign" />
+    <file md5sum="22fdc676e9eaac41b01f30ae94def0d1" name="default.phtml" role="magedesign" />
+    <file md5sum="f0dad926a6656534d88c8d76f10efbaf" name="file.phtml" role="magedesign" />
+    <file md5sum="6f8606b579abd15f7e1e725386322cea" name="select.phtml" role="magedesign" />
+    <file md5sum="364294cb181873bf1bdbc8f3f35ecafc" name="text.phtml" role="magedesign" />
+    <file md5sum="0d0eddcf9a9bf4e55ccf7c6a293e0eaa" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\product\view\options\type -->
+   <dir name="frontend\default\watchshop\template\catalog\product\view\options\wrapper">
+    <file md5sum="c8c59c56588c71eb07a4fee5ee6e0347" name="bottom.phtml" role="magedesign" />
+    <file md5sum="cbf1ed76b0c8c0aa491f4596ede9af1f" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\product\view\options\wrapper -->
+   <dir name="frontend\default\watchshop\template\catalog\product\view\type">
+    <file md5sum="cabb3d03b19fc45f27105218047c70f4" name="configurable.phtml" role="magedesign" />
+    <file md5sum="d589e21f2ee79aa7ad5d94d38ca2fc5a" name="grouped.phtml" role="magedesign" />
+    <file md5sum="b38398ed75fb5f660dcd1f9a8bba6887" name="simple.phtml" role="magedesign" />
+    <file md5sum="82f59ba22e70eb410b48de96706a6db1" name="virtual.phtml" role="magedesign" />
+    <file md5sum="b9e8bbcf364f4a2a55e723a723c9dbe1" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\product\view\type -->
+   <dir name="frontend\default\watchshop\template\catalog\product\view\type\options">
+    <file md5sum="e927cfb0efff4fc4952d0c170dc1d861" name="configurable.phtml" role="magedesign" />
+    <file md5sum="0dcdb6504351e8d78d5c3119c931c443" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\product\view\type\options -->
+   <dir name="frontend\default\watchshop\template\catalog\product\widget\link">
+    <file md5sum="84664d9062ffcc35c658778b5f8481db" name="link_block.phtml" role="magedesign" />
+    <file md5sum="05e7aa0b70a519166f604f2c6bda6b24" name="link_inline.phtml" role="magedesign" />
+    <file md5sum="dc505bd6078ea6ff6df7404b57655f39" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\product\widget\link -->
+   <dir name="frontend\default\watchshop\template\catalog\product\widget\new\column">
+    <file md5sum="ed51f226a41f9b8cb61bf88b89aeb62b" name="new_default_list.phtml" role="magedesign" />
+    <file md5sum="fdcd6777e426da0e7863c5958c78e670" name="new_images_list.phtml" role="magedesign" />
+    <file md5sum="3d7f1af6204bab68bb11d33616c63e87" name="new_names_list.phtml" role="magedesign" />
+    <file md5sum="c8d146e39949c6eba0541ce6c562f3fc" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\product\widget\new\column -->
+   <dir name="frontend\default\watchshop\template\catalog\product\widget\new\content">
+    <file md5sum="95ac2423a3d5f4c381ce6efb323572d0" name="new_grid.phtml" role="magedesign" />
+    <file md5sum="6df4890c5b50590bcec06f56b51eaa83" name="new_list.phtml" role="magedesign" />
+    <file md5sum="7ed511047ddb9262fd8c5a224375b9a7" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\product\widget\new\content -->
+   <dir name="frontend\default\watchshop\template\catalog\rss\product">
+    <file md5sum="60665930be3071c0f555e2161dbb35ff" name="price.phtml" role="magedesign" />
+    <file md5sum="6ceac9ce3227a97a7b0a5f0e3a3ef4e2" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\rss\product -->
+   <dir name="frontend\default\watchshop\template\catalog\seo">
+    <file md5sum="e00326d9fe30484df4cb7c83b54cfebe" name="sitemap.phtml" role="magedesign" />
+    <file md5sum="32daddc89052b661eda44eda1deffefb" name="tree.phtml" role="magedesign" />
+    <file md5sum="fbad89ea72ecf9eed5afc5560e93b219" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\seo -->
+   <dir name="frontend\default\watchshop\template\catalog\seo\sitemap">
+    <file md5sum="f1f0c5b19325d37a7f84efd74118816b" name="container.phtml" role="magedesign" />
+    <file md5sum="7ec0f37bf57c33c8254fc84a4af4c5e4" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\catalog\seo\sitemap -->
+   <dir name="frontend\default\watchshop\template\centinel">
+    <file md5sum="e85f0dc303cac663827cf649a818718d" name="authentication.phtml" role="magedesign" />
+    <file md5sum="082d7c56140127544cf30c8c84a51692" name="logo.phtml" role="magedesign" />
+    <file md5sum="4eb404f6ccfd65f79371ae36947b237b" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\centinel -->
+   <dir name="frontend\default\watchshop\template\centinel\authentication">
+    <file md5sum="ab7fc3868687d2a0764de11cfbf9178c" name="complete.phtml" role="magedesign" />
+    <file md5sum="652885b74d2cbb8a06cdf3b6581697c3" name="start.phtml" role="magedesign" />
+    <file md5sum="c2d9784d0cae0ce5933ebdce0ba6ff3f" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\centinel\authentication -->
+   <dir name="frontend\default\watchshop\template\checkout">
+    <file md5sum="8c6fc7ab021d259e4dccf563d1df1e9a" name="cart.phtml" role="magedesign" />
+    <file md5sum="282db12d2ee282e5cf2118fc4a9e94ff" name="onepage.phtml" role="magedesign" />
+    <file md5sum="8b8313903e4f2b579c15aa981b3e1cf1" name="success.phtml" role="magedesign" />
+    <file md5sum="cdee0c8c01860b168d0d471ce8dd92fd" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\checkout -->
+   <dir name="frontend\default\watchshop\template\checkout\cart">
+    <file md5sum="8202d87ddc520295f4220603f568e4a7" name="coupon.phtml" role="magedesign" />
+    <file md5sum="1cc0e0a183fd9c2de3b1322dd7696f6f" name="crosssell.phtml" role="magedesign" />
+    <file md5sum="c8b815b66bc25cd6c5dbe4fef9b52086" name="noItems.phtml" role="magedesign" />
+    <file md5sum="449f045b15a0eb82915cbf1098827d17" name="shipping.phtml" role="magedesign" />
+    <file md5sum="ea1040db01741c92bee2ee1d6d1fc661" name="sidebar.phtml" role="magedesign" />
+    <file md5sum="819876265f4b024f1b423c53bf7e7f12" name="totals.phtml" role="magedesign" />
+    <file md5sum="cfb00abc50383d1d2599170519451364" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\checkout\cart -->
+   <dir name="frontend\default\watchshop\template\checkout\cart\item">
+    <file md5sum="a16813e790e9d228044d3c7ce3207d3d" name="default.phtml" role="magedesign" />
+    <file md5sum="53e5a584a3b7e7992a2bbf3b32a82b00" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\checkout\cart\item -->
+   <dir name="frontend\default\watchshop\template\checkout\cart\render">
+    <file md5sum="cfc28101532eb5145203dc7eaa5c419a" name="default.phtml" role="magedesign" />
+    <file md5sum="10a3ae5653460d8c128277f022c751e8" name="simple.phtml" role="magedesign" />
+    <file md5sum="1c535f3452326d55fea28049943a3092" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\checkout\cart\render -->
+   <dir name="frontend\default\watchshop\template\checkout\cart\sidebar">
+    <file md5sum="36fdcdfc716675bcb1a132995b13c144" name="default.phtml" role="magedesign" />
+    <file md5sum="42ff4df1b48373905a2ee66c414468f4" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\checkout\cart\sidebar -->
+   <dir name="frontend\default\watchshop\template\checkout\multishipping">
+    <file md5sum="7200bd2ac241fca2612513db0c0fdb81" name="addresses.phtml" role="magedesign" />
+    <file md5sum="96e38368dff97f80355ce0da66db8469" name="agreements.phtml" role="magedesign" />
+    <file md5sum="e7f91d4b0beae551857bafa8135faf17" name="billing.phtml" role="magedesign" />
+    <file md5sum="f06f5ac4fe2b8ffc5fea5bd7931c6971" name="link.phtml" role="magedesign" />
+    <file md5sum="d220a40024b245426f48c97ff4d0a55d" name="overview.phtml" role="magedesign" />
+    <file md5sum="a9f133d2fbda68a59189be7140195b4a" name="shipping.phtml" role="magedesign" />
+    <file md5sum="4aa1ec381c9dc78d45542eb48898e843" name="state.phtml" role="magedesign" />
+    <file md5sum="3f149576fb822caea60c0e3f6f031f18" name="success.phtml" role="magedesign" />
+    <file md5sum="653cd17821166c942591e7af84f815bc" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\checkout\multishipping -->
+   <dir name="frontend\default\watchshop\template\checkout\multishipping\address">
+    <file md5sum="365707a8eeb964224e06edc81c44783f" name="select.phtml" role="magedesign" />
+    <file md5sum="776a35f7e31d8cff7998d3e60f71b299" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\checkout\multishipping\address -->
+   <dir name="frontend\default\watchshop\template\checkout\multishipping\billing">
+    <file md5sum="b787971b6e30485d8eb43b1c6c211d7e" name="items.phtml" role="magedesign" />
+    <file md5sum="239becaa19717b037a3ad11309268fe4" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\checkout\multishipping\billing -->
+   <dir name="frontend\default\watchshop\template\checkout\multishipping\item">
+    <file md5sum="b51f23894ca1ab9d9da7dde209e124c6" name="default.phtml" role="magedesign" />
+    <file md5sum="178a0a438a01c59b84cab27da3da373a" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\checkout\multishipping\item -->
+   <dir name="frontend\default\watchshop\template\checkout\multishipping\overview">
+    <file md5sum="b02ca90a42fbd6e48295e250207e597d" name="item.phtml" role="magedesign" />
+    <file md5sum="7a37b0ab5fd75a273158a8815362fdcf" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\checkout\multishipping\overview -->
+   <dir name="frontend\default\watchshop\template\checkout\onepage">
+    <file md5sum="57c7c0b08a53dcae7ac16c458e4e6d54" name="agreements.phtml" role="magedesign" />
+    <file md5sum="902bf554152dc2790885ee46824bad7d" name="billing.phtml" role="magedesign" />
+    <file md5sum="a21a3b03cd09c2c1314237b7508f53a5" name="failure.phtml" role="magedesign" />
+    <file md5sum="9153867b8d8d6a2e7188596c422b30fa" name="link.phtml" role="magedesign" />
+    <file md5sum="ae2e4576b20b80d2f93b2fc9bfe1fdf6" name="login.phtml" role="magedesign" />
+    <file md5sum="d5c0e3004dee765c2678e4c20bd9214d" name="payment.phtml" role="magedesign" />
+    <file md5sum="ffc1cc085d4264d70bad7c56078284ab" name="progress.phtml" role="magedesign" />
+    <file md5sum="c308e1d3565f62017f928f6cf4e8e763" name="review.phtml" role="magedesign" />
+    <file md5sum="e8cb9736d2796c15be9f6c8623025362" name="shipping.phtml" role="magedesign" />
+    <file md5sum="d8f16e93d2d96143364b4c40650f2462" name="shipping_method.phtml" role="magedesign" />
+    <file md5sum="a2d7729586f6a1339051c04db87dd0d4" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\checkout\onepage -->
+   <dir name="frontend\default\watchshop\template\checkout\onepage\payment">
+    <file md5sum="dc90f0b344f2536604b84523aa455b58" name="methods.phtml" role="magedesign" />
+    <file md5sum="75e3d7aaa8958572f79f632556a43971" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\checkout\onepage\payment -->
+   <dir name="frontend\default\watchshop\template\checkout\onepage\review">
+    <file md5sum="a9eac26ed3d7f091b85834a21b6ff9da" name="info.phtml" role="magedesign" />
+    <file md5sum="75ed70bb7bb1beea0310513c1bec5b64" name="item.phtml" role="magedesign" />
+    <file md5sum="fbdee442aa6ab53e44b297e22ea0410d" name="totals.phtml" role="magedesign" />
+    <file md5sum="45eea504344fb161869010a1d869fd63" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\checkout\onepage\review -->
+   <dir name="frontend\default\watchshop\template\checkout\onepage\shipping_method">
+    <file md5sum="4ef2ded591d7ad6076e870adfdee00f6" name="additional.phtml" role="magedesign" />
+    <file md5sum="7c65f0f8de307ea1aad84a32b5e27bd8" name="available.phtml" role="magedesign" />
+    <file md5sum="33d6bc0a6bbf2205a0b454702c78c7cd" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\checkout\onepage\shipping_method -->
+   <dir name="frontend\default\watchshop\template\checkout\total">
+    <file md5sum="d124346296af51aecdbd715296e4967b" name="default.phtml" role="magedesign" />
+    <file md5sum="174686e2d042069a498eac35ddca5b20" name="tax.phtml" role="magedesign" />
+    <file md5sum="5b92dec94416c701f7989c07b059253f" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\checkout\total -->
+   <dir name="frontend\default\watchshop\template\cms">
+    <file md5sum="07e9a21b7af4fc798c5c4ebc4802510c" name="content.phtml" role="magedesign" />
+    <file md5sum="f6979cec1e877141b121aa4798222994" name="content_heading.phtml" role="magedesign" />
+    <file md5sum="3586a4a1245d7f77ef1acd46458659f8" name="meta.phtml" role="magedesign" />
+    <file md5sum="df04fa7c99f07f75060f43bc4599f3b9" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\cms -->
+   <dir name="frontend\default\watchshop\template\cms\default">
+    <file md5sum="7108e3afbc93875af68957e30819ead8" name="home.phtml" role="magedesign" />
+    <file md5sum="94f7a307ef422ea898ff7688d769b2f5" name="no-route.phtml" role="magedesign" />
+    <file md5sum="51c15fde5cd1c1143e47ab2360d6147a" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\cms\default -->
+   <dir name="frontend\default\watchshop\template\cms\widget\link">
+    <file md5sum="c4222bdfcdf29371bac807a789ec92d0" name="link_block.phtml" role="magedesign" />
+    <file md5sum="8a072a5b15321c7e3ba5647b33029402" name="link_inline.phtml" role="magedesign" />
+    <file md5sum="c7e6262a33647efc5f6b2239304ab188" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\cms\widget\link -->
+   <dir name="frontend\default\watchshop\template\cms\widget\static_block">
+    <file md5sum="8116184495b560a64fa93df95b3fe218" name="default.phtml" role="magedesign" />
+    <file md5sum="8f5050994b99b5112821763e4472d72d" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\cms\widget\static_block -->
+   <dir name="frontend\default\watchshop\template\contacts">
+    <file md5sum="0726d1936ab38a07f4517c9f1eb53bb4" name="form.phtml" role="magedesign" />
+    <file md5sum="b86276736f3a34567da544e49aadf856" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\contacts -->
+   <dir name="frontend\default\watchshop\template\core">
+    <file md5sum="34b858fa9a005aa146cf696d46b14af7" name="formkey.phtml" role="magedesign" />
+    <file md5sum="405f720e3846d9f5536d8930010147c7" name="link.phtml" role="magedesign" />
+    <file md5sum="b8f638123e6680d5c25ee13c8528be50" name="messages.phtml" role="magedesign" />
+    <file md5sum="d8007a26ac6a2e2a04ea08a3fabdcdb8" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\core -->
+   <dir name="frontend\default\watchshop\template\customer">
+    <file md5sum="2b79f8b29e0fe8959f7733b6a46f22ed" name="address.phtml" role="magedesign" />
+    <file md5sum="02ee3cde0524df5b7550618e37d160a8" name="balance.phtml" role="magedesign" />
+    <file md5sum="170f6d39db979ca1ac1c011bc07b8555" name="logout.phtml" role="magedesign" />
+    <file md5sum="9b6f9d1e8eaf8cb2b53b233ed7602999" name="orders.phtml" role="magedesign" />
+    <file md5sum="d98a71463aca3d8f3fa1f56bafd411dd" name="vssver.scc" role="magedesign" />
+    <file md5sum="ae2ba36df607b866e8fe1818e3d04c57" name="wishlist.phtml" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\customer -->
+   <dir name="frontend\default\watchshop\template\customer\account">
+    <file md5sum="94711bed9c88edc3c752c54e2b5be092" name="dashboard.phtml" role="magedesign" />
+    <file md5sum="3bfc2beb9ac38e75314a0c150238dfd6" name="navigation.phtml" role="magedesign" />
+    <file md5sum="50e41b95320032ee8a3788c838a4c77b" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\customer\account -->
+   <dir name="frontend\default\watchshop\template\customer\account\dashboard">
+    <file md5sum="a954e060600dd3040ff930733278a324" name="address.phtml" role="magedesign" />
+    <file md5sum="332ec64d5794b017a6e561733555a051" name="hello.phtml" role="magedesign" />
+    <file md5sum="11af77512352a8afe886017a5c53a707" name="info.phtml" role="magedesign" />
+    <file md5sum="bf97a4210224c7684bd5cea344c45eb1" name="newsletter.phtml" role="magedesign" />
+    <file md5sum="43f14a4d73bed8794411779c4541d9fb" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\customer\account\dashboard -->
+   <dir name="frontend\default\watchshop\template\customer\account\link">
+    <file md5sum="13b250a29cdbe6f7aec3d71f67996770" name="back.phtml" role="magedesign" />
+    <file md5sum="b1eee8a67306d9ca3c60f00e34109594" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\customer\account\link -->
+   <dir name="frontend\default\watchshop\template\customer\address">
+    <file md5sum="b9d361042c834d97af71eadbeb3716b2" name="book.phtml" role="magedesign" />
+    <file md5sum="dc460302f2d3d256bc901b4ce483b9af" name="edit.phtml" role="magedesign" />
+    <file md5sum="60bd23a2430b1d98732686f9ada10e16" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\customer\address -->
+   <dir name="frontend\default\watchshop\template\customer\form">
+    <file md5sum="df6ed8f30aa454f47e25404ea71b141c" name="address.phtml" role="magedesign" />
+    <file md5sum="9ef9fef564b53a279b36dd786b5e4017" name="changepassword.phtml" role="magedesign" />
+    <file md5sum="0fb062be58bf686f447bf76b6f320f65" name="confirmation.phtml" role="magedesign" />
+    <file md5sum="a5f552e7dd25376d9be265e5ff16d6c4" name="edit.phtml" role="magedesign" />
+    <file md5sum="bf0b9a0138dd5cc8aeaa50b80426f272" name="forgotpassword.phtml" role="magedesign" />
+    <file md5sum="941388339785b11b41ecc29a5fc6e183" name="login.phtml" role="magedesign" />
+    <file md5sum="3c30195cc30e0f78d9e7050729bb3c8d" name="mini.login.phtml" role="magedesign" />
+    <file md5sum="7f438a1ea7e32897ef03a98ff55153be" name="newsletter.phtml" role="magedesign" />
+    <file md5sum="eb9b9969960d9329cccd7b3d7a15c180" name="register.phtml" role="magedesign" />
+    <file md5sum="0b0991f5f32593461b1403309e86858c" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\customer\form -->
+   <dir name="frontend\default\watchshop\template\customer\widget">
+    <file md5sum="a225b8c97807c84a050cb7a17401baf5" name="dob.phtml" role="magedesign" />
+    <file md5sum="59ecc35ca21b5452d23f3521015041e3" name="gender.phtml" role="magedesign" />
+    <file md5sum="42bffd4977a9352987650403fd08c481" name="name.phtml" role="magedesign" />
+    <file md5sum="b7976a56c623a9413f5b51541b4d16d1" name="taxvat.phtml" role="magedesign" />
+    <file md5sum="aa68c51700da4347c8c0a5dafde0d85e" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\customer\widget -->
+   <dir name="frontend\default\watchshop\template\directory">
+    <file md5sum="fb6e0f51048afe7d12809a3ac576a62c" name="currency.phtml" role="magedesign" />
+    <file md5sum="f7199888b63704b3f071a6797ac51bb0" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\directory -->
+   <dir name="frontend\default\watchshop\template\directory\currency">
+    <file md5sum="0d5053e6b95bae766af71a6b8920f368" name="switch.phtml" role="magedesign" />
+    <file md5sum="a5e0b9c267fd7fa06c3de1d7a3f3802d" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\directory\currency -->
+   <dir name="frontend\default\watchshop\template\directory\js">
+    <file md5sum="373bd10b10ea1f5ffd66bcd1df7c3b3a" name="optional_zip_countries.phtml" role="magedesign" />
+    <file md5sum="89fddbe13723da3e8139ba8281931fdf" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\directory\js -->
+   <dir name="frontend\default\watchshop\template\downloadable\catalog\product">
+    <file md5sum="dee32ccf2b9f3ae618cbb9c15626cc14" name="links.phtml" role="magedesign" />
+    <file md5sum="610fbc19b819b894fb61cad495c4a9a8" name="samples.phtml" role="magedesign" />
+    <file md5sum="74fec78761347e082ba8375a187528e8" name="type.phtml" role="magedesign" />
+    <file md5sum="798f218dda117c6bce03e55b2688425c" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\downloadable\catalog\product -->
+   <dir name="frontend\default\watchshop\template\downloadable\checkout">
+    <file md5sum="b7681bef3e4bdebcd17fa3d70e1676a6" name="success.phtml" role="magedesign" />
+    <file md5sum="26d3ddb5d4e15b8139fbf8b468b84d47" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\downloadable\checkout -->
+   <dir name="frontend\default\watchshop\template\downloadable\checkout\cart\item">
+    <file md5sum="e8d3d9eb5ebeb9a8732450200ac7fc57" name="default.phtml" role="magedesign" />
+    <file md5sum="4b43e58a56b4dfedc62fb0e55776df66" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\downloadable\checkout\cart\item -->
+   <dir name="frontend\default\watchshop\template\downloadable\checkout\multishipping\item">
+    <file md5sum="5b6171b5967b9172efb44821a793a4a2" name="downloadable.phtml" role="magedesign" />
+    <file md5sum="56e426d2305270ed8c02c455ef3c21ec" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\downloadable\checkout\multishipping\item -->
+   <dir name="frontend\default\watchshop\template\downloadable\checkout\onepage\review">
+    <file md5sum="142c7c94b141bb54671749e79c38dc50" name="item.phtml" role="magedesign" />
+    <file md5sum="26d080c32a43bf5946a5fe7f23be80f8" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\downloadable\checkout\onepage\review -->
+   <dir name="frontend\default\watchshop\template\downloadable\customer\products">
+    <file md5sum="fc8483e5d11eb76825b02f4b5362c42e" name="list.phtml" role="magedesign" />
+    <file md5sum="428f6192adf807f599bfcb12b18ce198" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\downloadable\customer\products -->
+   <dir name="frontend\default\watchshop\template\downloadable\email\order\items\creditmemo">
+    <file md5sum="75e3c4c49ddae6d29fc658f95b03a0cc" name="downloadable.phtml" role="magedesign" />
+    <file md5sum="f033df0d828c86dd68dfc6eae4922a71" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\downloadable\email\order\items\creditmemo -->
+   <dir name="frontend\default\watchshop\template\downloadable\email\order\items\invoice">
+    <file md5sum="7b14cb2af9dab18868f33e9a2ec78c88" name="downloadable.phtml" role="magedesign" />
+    <file md5sum="05bc5850bebe77a712c4a27cc7d97762" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\downloadable\email\order\items\invoice -->
+   <dir name="frontend\default\watchshop\template\downloadable\email\order\items\order">
+    <file md5sum="18a38659fc27aac866843b9a028155d2" name="downloadable.phtml" role="magedesign" />
+    <file md5sum="f13b0a3b221047b71f8955a58f613dc8" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\downloadable\email\order\items\order -->
+   <dir name="frontend\default\watchshop\template\downloadable\sales\order\creditmemo\items\renderer">
+    <file md5sum="13ab4cc47c487b7d658032979a93c245" name="downloadable.phtml" role="magedesign" />
+    <file md5sum="b38cbed6dc12952592394bef50367403" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\downloadable\sales\order\creditmemo\items\renderer -->
+   <dir name="frontend\default\watchshop\template\downloadable\sales\order\invoice\items\renderer">
+    <file md5sum="c4ae39e3c71e09e530cb407e2d918acc" name="downloadable.phtml" role="magedesign" />
+    <file md5sum="6c6c8be15848c611b895be481ef80f3a" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\downloadable\sales\order\invoice\items\renderer -->
+   <dir name="frontend\default\watchshop\template\downloadable\sales\order\items\renderer">
+    <file md5sum="ac3a3e58a2a91bd1b4233c9d1b802fcd" name="downloadable.phtml" role="magedesign" />
+    <file md5sum="9de6517a4e47201b835246edeee24b91" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\downloadable\sales\order\items\renderer -->
+   <dir name="frontend\default\watchshop\template\email\order">
+    <file md5sum="e6f400f428915c75016827fb3bdc7575" name="items.phtml" role="magedesign" />
+    <file md5sum="d71e7db38144f52c333581d81d43c0a2" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\email\order -->
+   <dir name="frontend\default\watchshop\template\email\order\creditmemo">
+    <file md5sum="796056a02659c89f761a6cbe046a6829" name="items.phtml" role="magedesign" />
+    <file md5sum="24cfda302faa89b97fa9af21d9d21b44" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\email\order\creditmemo -->
+   <dir name="frontend\default\watchshop\template\email\order\invoice">
+    <file md5sum="fb5badeeb5cc4ee83b7dd153f0ea5a32" name="items.phtml" role="magedesign" />
+    <file md5sum="ef1466d662bb1df8938a639131613b9a" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\email\order\invoice -->
+   <dir name="frontend\default\watchshop\template\email\order\items\creditmemo">
+    <file md5sum="ae7083d2b0d3304c0655b68f7f5f3c33" name="default.phtml" role="magedesign" />
+    <file md5sum="17ef182ac86e348c76c62b8ce6490420" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\email\order\items\creditmemo -->
+   <dir name="frontend\default\watchshop\template\email\order\items\invoice">
+    <file md5sum="ae7083d2b0d3304c0655b68f7f5f3c33" name="default.phtml" role="magedesign" />
+    <file md5sum="19ce44380966cc878366d608a589d2fa" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\email\order\items\invoice -->
+   <dir name="frontend\default\watchshop\template\email\order\items\order">
+    <file md5sum="17f6de96573e425003977b3fee5f25ee" name="default.phtml" role="magedesign" />
+    <file md5sum="b7fc2fbe627dbb2a4170a4b7d47f98c2" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\email\order\items\order -->
+   <dir name="frontend\default\watchshop\template\email\order\items\shipment">
+    <file md5sum="15b56e46a790c881877a245b92eb12c5" name="default.phtml" role="magedesign" />
+    <file md5sum="e2c6730f8abdbb95968962f28cd5efdb" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\email\order\items\shipment -->
+   <dir name="frontend\default\watchshop\template\email\order\shipment">
+    <file md5sum="9c49ab1425edecee79c649fb269dc053" name="items.phtml" role="magedesign" />
+    <file md5sum="386d371be3a6cda542534e8e3333eb46" name="track.phtml" role="magedesign" />
+    <file md5sum="15b8c67cb3646cbe53089370d9349e41" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\email\order\shipment -->
+   <dir name="frontend\default\watchshop\template\email\productalert">
+    <file md5sum="e99dc6c6df197d3bb8a62369edb4ba41" name="price.phtml" role="magedesign" />
+    <file md5sum="63cca565706ee6bb931961e92ac41c11" name="stock.phtml" role="magedesign" />
+    <file md5sum="a40537bf1ca62867903dbd7189ffdcfc" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\email\productalert -->
+   <dir name="frontend\default\watchshop\template\faq">
+    <file md5sum="ab96f4bc3d7aa107028f8ecf55aa4840" name="category.phtml" role="magedesign" />
+    <file md5sum="d9731a69c66b7c58fe62e54ef03f2822" name="overview.phtml" role="magedesign" />
+    <file md5sum="5f41b755bb46c5e2db19c8cb8a397f26" name="search.phtml" role="magedesign" />
+    <file md5sum="cfa36340f47b0a6cd6edb9a68b220bab" name="view.phtml" role="magedesign" />
+    <file md5sum="02c435705d6457ad44700634da39d6d6" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\faq -->
+   <dir name="frontend\default\watchshop\template\giftmessage">
+    <file md5sum="bc9cbf86f455c3cedfe07f97c6c4b0ad" name="inline.phtml" role="magedesign" />
+    <file md5sum="f6a26d09a37fb57a2ba970f5bf6cb304" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\giftmessage -->
+   <dir name="frontend\default\watchshop\template\googlecheckout">
+    <file md5sum="d57a8c43d55da088e3c558a78f8a3564" name="form.phtml" role="magedesign" />
+    <file md5sum="fb4cad82087ef384502f0b66ad9de56a" name="link.phtml" role="magedesign" />
+    <file md5sum="e9f7a09ed1e25fc98d1b5e5df64695c6" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\googlecheckout -->
+   <dir name="frontend\default\watchshop\template\manufacturer">
+    <file md5sum="a8ee002b10bc0b418c4b0a39cec6cdb5" name="manufacturer.phtml" role="magedesign" />
+    <file md5sum="7ac764bec0d05a20ef6ed285f939f729" name="view.phtml" role="magedesign" />
+    <file md5sum="2e8843adbfe3210c5519f83e43dee0e7" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\manufacturer -->
+   <dir name="frontend\default\watchshop\template\moneybookers">
+    <file md5sum="979c41c03b99c115e8d321ef62894eb3" name="blank.phtml" role="magedesign" />
+    <file md5sum="44f93280a7050abd4fe25e0afe06e7b5" name="form.phtml" role="magedesign" />
+    <file md5sum="5f2448d85c64230333f77c65a60d76b8" name="info.phtml" role="magedesign" />
+    <file md5sum="5c6be84715f3136f10be5d3c6fd04d82" name="payment.phtml" role="magedesign" />
+    <file md5sum="bda8632a83fd18084b940de62b0b34a6" name="placeform.phtml" role="magedesign" />
+    <file md5sum="99811d651f215827bbd85db9ade1824b" name="redirect.phtml" role="magedesign" />
+    <file md5sum="6ec8e5d93805d7dd85cdf8265957028e" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\moneybookers -->
+   <dir name="frontend\default\watchshop\template\newsletter">
+    <file md5sum="86b53977ac732b0e6780618daf442981" name="subscribe.phtml" role="magedesign" />
+    <file md5sum="f275e88debe931b9077677f2e55b13d6" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\newsletter -->
+   <dir name="frontend\default\watchshop\template\page">
+    <file md5sum="1e2b8d65c45c568c7b454faa8cc42650" name="1column.phtml" role="magedesign" />
+    <file md5sum="d479aabe16346de16f073e17f3a8f59a" name="2columns-left.phtml" role="magedesign" />
+    <file md5sum="0d7d86ec4306e65c5e0e6f5e4ffcb227" name="2columns-right.phtml" role="magedesign" />
+    <file md5sum="055ac23e74d5a08a1912f49b01f09ff9" name="3columns.phtml" role="magedesign" />
+    <file md5sum="20722239534cf24c556b5797f723e533" name="empty.phtml" role="magedesign" />
+    <file md5sum="84919c363c8b4b23fc038dadfdfddfa2" name="popup.phtml" role="magedesign" />
+    <file md5sum="76ca8232a3799694ec556ff74423072b" name="print.phtml" role="magedesign" />
+    <file md5sum="3fc0f1f6cbd2411b66f73f35831fac18" name="redirect.phtml" role="magedesign" />
+    <file md5sum="74383b42438db08d335b4fcb44f79e64" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\page -->
+   <dir name="frontend\default\watchshop\template\page\html">
+    <file md5sum="6617c89b43cd06afe6703eef3af8a3de" name="breadcrumbs.phtml" role="magedesign" />
+    <file md5sum="d61d915a4a3ac4ad712f4715e41ce020" name="footer.phtml" role="magedesign" />
+    <file md5sum="268b0a40785d5c1ad62a96ccd3df0d98" name="head.phtml" role="magedesign" />
+    <file md5sum="0809e6ea4f8ee7622a68e5eada80870c" name="header.phtml" role="magedesign" />
+    <file md5sum="05f29c57bbfc0ed4dd385ad6ae0ef320" name="notices.phtml" role="magedesign" />
+    <file md5sum="40736161527527f7cae4d58f31f0c5dc" name="pager.phtml" role="magedesign" />
+    <file md5sum="4f47a416a4e8fae3c68ca5e194f2d2d7" name="top.links.phtml" role="magedesign" />
+    <file md5sum="d21e5fdc987010387c85ab988e036b5b" name="vssver.scc" role="magedesign" />
+    <file md5sum="3462910f2af2a71905237b09941b8cc4" name="wrapper.phtml" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\page\html -->
+   <dir name="frontend\default\watchshop\template\page\js">
+    <file md5sum="f89613b6877a08527a6ffd3cec46e8ed" name="calendar.phtml" role="magedesign" />
+    <file md5sum="c67ad29b0a508e32c64857c8f9fb7ed2" name="cookie.phtml" role="magedesign" />
+    <file md5sum="b90de30feb1819134723b73baf770dbf" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\page\js -->
+   <dir name="frontend\default\watchshop\template\page\switch">
+    <file md5sum="fc8adf76c54fa57bf6be534e44029fc7" name="flags.phtml" role="magedesign" />
+    <file md5sum="88f8234cb23ab58115ccdf8df39b0f71" name="languages.phtml" role="magedesign" />
+    <file md5sum="a1747b8834fb226bf06e17808f6d508b" name="stores.phtml" role="magedesign" />
+    <file md5sum="84b9378a5de15c26b0b4214d6cfcd7dd" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\page\switch -->
+   <dir name="frontend\default\watchshop\template\page\template">
+    <file md5sum="6919d3b68791adb6e8e7973179d9f8c2" name="container.phtml" role="magedesign" />
+    <file md5sum="37fa8b19d1eb9e1447e4a6e242793c5e" name="links.phtml" role="magedesign" />
+    <file md5sum="e62d01fc7a485a33bf3abcd2d5147dc7" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\page\template -->
+   <dir name="frontend\default\watchshop\template\payment\form">
+    <file md5sum="2dfa71359a55bf259d1c504457b685b8" name="cc.phtml" role="magedesign" />
+    <file md5sum="7c38ad0dac69045b58e4eeeed5c731c1" name="ccsave.phtml" role="magedesign" />
+    <file md5sum="6136f966d5bc552d0ff9176d9065f092" name="checkmo.phtml" role="magedesign" />
+    <file md5sum="cc0010eade3ac5e07d727ec271971f95" name="purchaseorder.phtml" role="magedesign" />
+    <file md5sum="eb3428f1a06a80e8b918e3321ef840f0" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\payment\form -->
+   <dir name="frontend\default\watchshop\template\payment\info">
+    <file md5sum="6a6a043c05287273251cf7762c89cd69" name="checkmo.phtml" role="magedesign" />
+    <file md5sum="b1c19b8eb50563d05fc9176720113511" name="default.phtml" role="magedesign" />
+    <file md5sum="56775b5fc384e38aaec63b6cbc2ffbea" name="purchaseorder.phtml" role="magedesign" />
+    <file md5sum="2a6490b639edadd4dcca2162b2dbd525" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\payment\info -->
+   <dir name="frontend\default\watchshop\template\paypal\express">
+    <file md5sum="bc86640759317a37e92839a765755707" name="review.phtml" role="magedesign" />
+    <file md5sum="61e0ea73d1b430b3194db68a2cd0a9fd" name="shortcut.phtml" role="magedesign" />
+    <file md5sum="09fedffb8d537f14c12a1fed1cf685de" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\paypal\express -->
+   <dir name="frontend\default\watchshop\template\paypal\express\review">
+    <file md5sum="d79e416d9848d615394af95922e14d0b" name="details.phtml" role="magedesign" />
+    <file md5sum="22a5befd5b5f098b48e08220bed89f2e" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\paypal\express\review -->
+   <dir name="frontend\default\watchshop\template\paypal\payment">
+    <file md5sum="e457d6811857d8f6f4f2f4e2b69e72c9" name="mark.phtml" role="magedesign" />
+    <file md5sum="c4c0d4d60892f03d82869c7e120646d8" name="redirect.phtml" role="magedesign" />
+    <file md5sum="db225f8bfb2fc0632f4eaa66cdbe1446" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\paypal\payment -->
+   <dir name="frontend\default\watchshop\template\poll">
+    <file md5sum="64aa1e116285634a189188a84fa39378" name="active.phtml" role="magedesign" />
+    <file md5sum="8457e515766711212f5c7a90bad5b70a" name="result.phtml" role="magedesign" />
+    <file md5sum="a799b02c38cf92f42d91d0a546703a60" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\poll -->
+   <dir name="frontend\default\watchshop\template\productalert">
+    <file md5sum="483415404616c57bbfa75b162717d655" name="price.phtml" role="magedesign" />
+    <file md5sum="f040f9eedab8b707e68b4633c962da85" name="stock.phtml" role="magedesign" />
+    <file md5sum="4e3d7020bd9a541d8752ce5f7c36363d" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\productalert -->
+   <dir name="frontend\default\watchshop\template\rating">
+    <file md5sum="90a091bc5642116dafc401bfa8efd415" name="detailed.phtml" role="magedesign" />
+    <file md5sum="3f5af84ab47ac398489ef9b9ecf8d359" name="empty.phtml" role="magedesign" />
+    <file md5sum="e4b5172f7c493bfedbe8d5b377ac93ca" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\rating -->
+   <dir name="frontend\default\watchshop\template\reports">
+    <file md5sum="38c93c3fdf53c90962e8079f8dcf3231" name="home_product_compared.phtml" role="magedesign" />
+    <file md5sum="c2bf6f17ba20b9a7f8800902c7011cb4" name="home_product_viewed.phtml" role="magedesign" />
+    <file md5sum="075f3608df85dbdd650fee22b46bfd8d" name="product_compared.phtml" role="magedesign" />
+    <file md5sum="a3334c79c434bf62a8fb82e79b092c99" name="product_viewed.phtml" role="magedesign" />
+    <file md5sum="16cd8ba8c22325f1c64be40b621e3370" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\reports -->
+   <dir name="frontend\default\watchshop\template\reports\widget\compared\column">
+    <file md5sum="a4e062dd5526943b537c554acec13fcd" name="compared_default_list.phtml" role="magedesign" />
+    <file md5sum="d60e9542ef72f3248417d42b42048435" name="compared_images_list.phtml" role="magedesign" />
+    <file md5sum="791b92cb96b383f2de408f12ba74dea5" name="compared_names_list.phtml" role="magedesign" />
+    <file md5sum="8a84795bc85d2945f7e81b9b06559861" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\reports\widget\compared\column -->
+   <dir name="frontend\default\watchshop\template\reports\widget\compared\content">
+    <file md5sum="1be26eb0e8a0a1f00753165834d9785f" name="compared_grid.phtml" role="magedesign" />
+    <file md5sum="c67c71a07bbd1a8f4bb24e35e53781d8" name="compared_list.phtml" role="magedesign" />
+    <file md5sum="2a766cf167cb4053f29236ad5da90870" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\reports\widget\compared\content -->
+   <dir name="frontend\default\watchshop\template\reports\widget\viewed\column">
+    <file md5sum="09980b6b0ede53bb483a3ce9d3f6b3fc" name="viewed_default_list.phtml" role="magedesign" />
+    <file md5sum="41b02677e0eac999e56a85d6354ed1ef" name="viewed_images_list.phtml" role="magedesign" />
+    <file md5sum="6ca148d4b27b3d0c43320501210cbdc5" name="viewed_names_list.phtml" role="magedesign" />
+    <file md5sum="18643284538e22c2f85730a8e691b272" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\reports\widget\viewed\column -->
+   <dir name="frontend\default\watchshop\template\reports\widget\viewed\content">
+    <file md5sum="d9a52a5af1f329fee9f729517e6b8f4e" name="viewed_grid.phtml" role="magedesign" />
+    <file md5sum="ff6195aa9a09572e4f26c95818fe8bb8" name="viewed_list.phtml" role="magedesign" />
+    <file md5sum="8738fc4d590cc1619d5597b9ebc0213c" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\reports\widget\viewed\content -->
+   <dir name="frontend\default\watchshop\template\review">
+    <file md5sum="b915be322330a1d55f6dae69da642d81" name="form.phtml" role="magedesign" />
+    <file md5sum="9d3c751e15984b85b569b6b0dc906e31" name="view.phtml" role="magedesign" />
+    <file md5sum="a8c62390e5e7a0b4e7d6a60971ee00a4" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\review -->
+   <dir name="frontend\default\watchshop\template\review\customer">
+    <file md5sum="c97d1edc87b8535026497599f7c2c70f" name="list.phtml" role="magedesign" />
+    <file md5sum="a27bbe8c85bfa1f79460890abcd1ccda" name="recent.phtml" role="magedesign" />
+    <file md5sum="2c323f7ba16aaa5c86db0ac1313f736e" name="view.phtml" role="magedesign" />
+    <file md5sum="8c0461fb6d7ef437d9e394962053938a" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\review\customer -->
+   <dir name="frontend\default\watchshop\template\review\helper">
+    <file md5sum="2fa14067cf2ef3235f4af8cb8e27dcad" name="summary.phtml" role="magedesign" />
+    <file md5sum="d95fcd35b507566749156d0c57534a0f" name="summary_short.phtml" role="magedesign" />
+    <file md5sum="75db62d6bf4437101893f046470c8fad" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\review\helper -->
+   <dir name="frontend\default\watchshop\template\review\product\view">
+    <file md5sum="57c17b342d9f1f990aa082ac83ee48ed" name="count.phtml" role="magedesign" />
+    <file md5sum="4fdadce0e618512fcfd1bc04470d307b" name="list.phtml" role="magedesign" />
+    <file md5sum="d948a014c66a81081d654b1e5c3db4bc" name="other.phtml" role="magedesign" />
+    <file md5sum="45f19deb931f313d3e1456f3cde9179b" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\review\product\view -->
+   <dir name="frontend\default\watchshop\template\rss">
+    <file md5sum="0e3417e99af580b5d5ed18851e2f5482" name="list.phtml" role="magedesign" />
+    <file md5sum="fc4806b7183ab90ff1c38856379e361b" name="nofeed.phtml" role="magedesign" />
+    <file md5sum="897141dd026190ef306b9610349b183d" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\rss -->
+   <dir name="frontend\default\watchshop\template\rss\order">
+    <file md5sum="138c5fc957dd7e5a81972e116c14c539" name="details.phtml" role="magedesign" />
+    <file md5sum="bf236c921efad9b464de3e09dd8c6497" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\rss\order -->
+   <dir name="frontend\default\watchshop\template\sales\order">
+    <file md5sum="8095d6ae7da98482879b15ce1cd98244" name="creditmemo.phtml" role="magedesign" />
+    <file md5sum="eabf9cc2ab6d6a1e1a08b39dee093118" name="details.phtml" role="magedesign" />
+    <file md5sum="ea056aa7176d30c542feeb3e4e2358f8" name="history.phtml" role="magedesign" />
+    <file md5sum="c24ca8041ed744e6495c76b569e7bb92" name="info.phtml" role="magedesign" />
+    <file md5sum="9cab0ad462a63a977276d955d8e48167" name="invoice.phtml" role="magedesign" />
+    <file md5sum="f1cda7c083426866129a3021a64ec00f" name="items.phtml" role="magedesign" />
+    <file md5sum="c9cbf30d299e5c789936ce5687df3e69" name="print.phtml" role="magedesign" />
+    <file md5sum="5304ddb9c90a323b97c322795878b073" name="recent.phtml" role="magedesign" />
+    <file md5sum="fa2dd47ffb3cfa1aab75d423d969f6e5" name="shipment.phtml" role="magedesign" />
+    <file md5sum="199d226e1126ab080a9783f4e4430b51" name="totals.phtml" role="magedesign" />
+    <file md5sum="d3f13b8f122a03032d73a5a9e2b5b3e5" name="trackinginfo.phtml" role="magedesign" />
+    <file md5sum="bc91f09534c5b86e9cdb76d97c308474" name="view.phtml" role="magedesign" />
+    <file md5sum="3fd806620b738c0e29954afe441c5174" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\sales\order -->
+   <dir name="frontend\default\watchshop\template\sales\order\creditmemo">
+    <file md5sum="b76ad4c91852bec090fa91f892ddc992" name="items.phtml" role="magedesign" />
+    <file md5sum="0e71835d14814dc38b4f78ca0f58b024" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\sales\order\creditmemo -->
+   <dir name="frontend\default\watchshop\template\sales\order\creditmemo\items\renderer">
+    <file md5sum="3e663d6958adf463ed5d104be7b68e49" name="default.phtml" role="magedesign" />
+    <file md5sum="c4faac38d53da741b86a96701f716c11" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\sales\order\creditmemo\items\renderer -->
+   <dir name="frontend\default\watchshop\template\sales\order\invoice">
+    <file md5sum="b59823787b1a5d8108c08d6cd8ff7c5f" name="items.phtml" role="magedesign" />
+    <file md5sum="d7291ca204687e6033fd5c3a7601a4dc" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\sales\order\invoice -->
+   <dir name="frontend\default\watchshop\template\sales\order\invoice\items\renderer">
+    <file md5sum="51ad71136a9e73ea5a340a1c1d27d1ef" name="default.phtml" role="magedesign" />
+    <file md5sum="fabbd7acc64e4fa0f14799d11e9022e4" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\sales\order\invoice\items\renderer -->
+   <dir name="frontend\default\watchshop\template\sales\order\items\renderer">
+    <file md5sum="d095916b39adfb30f946d5e351b54081" name="default.phtml" role="magedesign" />
+    <file md5sum="19807b9edd739f26b96be2e488801eed" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\sales\order\items\renderer -->
+   <dir name="frontend\default\watchshop\template\sales\order\print">
+    <file md5sum="8a161cc2741f0de9b4cb7767d5b5e2c0" name="creditmemo.phtml" role="magedesign" />
+    <file md5sum="a69a41d3ff30dd20c29a30c7eb38cad9" name="invoice.phtml" role="magedesign" />
+    <file md5sum="c6584ae67dabf972616a32ba435b0ff3" name="shipment.phtml" role="magedesign" />
+    <file md5sum="13e04602fdaa39f79c86bf37abe7e000" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\sales\order\print -->
+   <dir name="frontend\default\watchshop\template\sales\order\shipment">
+    <file md5sum="1b084a1ca9a9137f64fd129d8284cb83" name="items.phtml" role="magedesign" />
+    <file md5sum="e6380ca43d63fc40ffc0777dba8102f0" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\sales\order\shipment -->
+   <dir name="frontend\default\watchshop\template\sales\order\shipment\items\renderer">
+    <file md5sum="af8c8491bb5f0450681e081646749f9a" name="default.phtml" role="magedesign" />
+    <file md5sum="49b745279fa10fcc3fd89ccad1c28b7d" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\sales\order\shipment\items\renderer -->
+   <dir name="frontend\default\watchshop\template\sales\reorder">
+    <file md5sum="debb55beadae31e521c22f4b6b611bbc" name="sidebar.phtml" role="magedesign" />
+    <file md5sum="cb03e875c24b86db83331e7d8d0acc23" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\sales\reorder -->
+   <dir name="frontend\default\watchshop\template\sendfriend">
+    <file md5sum="04777c24c648a4e571aaf3f1b3bc2a93" name="send.phtml" role="magedesign" />
+    <file md5sum="f0371257344624c4729572b1b6da466b" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\sendfriend -->
+   <dir name="frontend\default\watchshop\template\shipping\tracking">
+    <file md5sum="891e4d3203d280297849028f4a28def1" name="ajax.phtml" role="magedesign" />
+    <file md5sum="0c41ac442bb65245bb0d2b276dcd29ef" name="popup.phtml" role="magedesign" />
+    <file md5sum="fa77d5260ea09e47d48a17257aa03bec" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\shipping\tracking -->
+   <dir name="frontend\default\watchshop\template\tag">
+    <file md5sum="40953461215f1bd6c39003a54c6f8dce" name="cloud.phtml" role="magedesign" />
+    <file md5sum="68aebb25d0b9f2f12d65bad173f10443" name="list.phtml" role="magedesign" />
+    <file md5sum="f4603bef887de912f4fd3cafd47b7479" name="popular.phtml" role="magedesign" />
+    <file md5sum="c1d07b72e2bd88b2b1282c09d490216f" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\tag -->
+   <dir name="frontend\default\watchshop\template\tag\customer">
+    <file md5sum="d7603bd6d453c83b44df031f6a37b53d" name="recent.phtml" role="magedesign" />
+    <file md5sum="1c41409a1029d49adeedfd2f9a0daee8" name="tags.phtml" role="magedesign" />
+    <file md5sum="61e2c0b96ed1a91614663bc181169a15" name="view.phtml" role="magedesign" />
+    <file md5sum="ccb6d9ec96ad4c976f129c14763b043e" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\tag\customer -->
+   <dir name="frontend\default\watchshop\template\tax\checkout">
+    <file md5sum="ab06539d01750f4bbddb1e45c48bbb7c" name="discount.phtml" role="magedesign" />
+    <file md5sum="e6e65e770406c819896d4b6232f2b898" name="grandtotal.phtml" role="magedesign" />
+    <file md5sum="0252eee6a6bf4093faae2dd3efe279ae" name="shipping.phtml" role="magedesign" />
+    <file md5sum="f1be48b3a0d516dcc36081195301cebb" name="subtotal.phtml" role="magedesign" />
+    <file md5sum="2ce967b62415bca3b3642d0d899433c1" name="tax.phtml" role="magedesign" />
+    <file md5sum="bf4df30d867b31c3c63fb9ef51aaf479" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\tax\checkout -->
+   <dir name="frontend\default\watchshop\template\tax\order">
+    <file md5sum="a4039722986a8c1bd9f5ec70e71930cc" name="tax.phtml" role="magedesign" />
+    <file md5sum="d9e66bec6fea9d7e377865acd55656f9" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\tax\order -->
+   <dir name="frontend\default\watchshop\template\wishlist">
+    <file md5sum="c16980e193f863afcab42d50ffa89119" name="shared.phtml" role="magedesign" />
+    <file md5sum="eead69f47b560e1e9bee61e9d5d34feb" name="sharing.phtml" role="magedesign" />
+    <file md5sum="1aef2639d6b7c9cc5cab862f0bc627ec" name="sidebar.phtml" role="magedesign" />
+    <file md5sum="d6e38d9877a2839d8800a5393a798c59" name="view.phtml" role="magedesign" />
+    <file md5sum="e6fe2815f131dcdbe60fd1cf630cd676" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\wishlist -->
+   <dir name="frontend\default\watchshop\template\wishlist\email">
+    <file md5sum="cf4b63131a09b99ac683578ac818f65b" name="items.phtml" role="magedesign" />
+    <file md5sum="2880899e131b36fe00a1ee38d5e377c9" name="rss.phtml" role="magedesign" />
+    <file md5sum="91eb2a7be97062a70c0806dd414ec041" name="vssver.scc" role="magedesign" />
+   </dir> <!-- /frontend\default\watchshop\template\wishlist\email -->
+   <dir name="js">
+    <file md5sum="e37b582ef59109eb707780e9541c7b44" name="easySlider1.5.js" role="mage" />
+    <file md5sum="e4af2b4805203f1ac490ad67531b848b" name="jquery-latest.js" role="mage" />
+    <file md5sum="de564027c44cb74f52a63b0655b79825" name="jquery.js" role="mage" />
+    <file md5sum="de564027c44cb74f52a63b0655b79825" name="jquery_silde.js" role="mage" />
+    <file md5sum="f4666762923736846a6256765bf32065" name="play.js" role="mage" />
+    <file md5sum="24343c09342ca0a85fb7952c0d5fadf0" name="tracking.js" role="mage" />
+   </dir> <!-- /js -->
+   <dir name="js\magestore">
+    <file md5sum="649ee479ee768297aa7105ba06ecdd53" name="jquery.js" role="mage" />
+    <file md5sum="b7085caae743a11400d4fa1ef66cf82d" name="jquery.scrollShow-min.js" role="mage" />
+    <file md5sum="12251cfe0a48e2024734a3d059ae7355" name="jquery.scrollShow.js" role="mage" />
+    <file md5sum="38608df4691e60bf6d74868bc02acdb4" name="jquery.scrollTo-min.js" role="mage" />
+    <file md5sum="b219403661a6f6c29fcee54fd6200d78" name="slider-config.js" role="mage" />
+   </dir> <!-- /js\magestore -->
+   <dir name="js\magestore\images">
+    <file md5sum="ed280a0ea3cc38f3cbbc747acfbef47d" name="0.gif" role="mage" />
+    <file md5sum="5bbda4867f717fad854dcf29fb0f7092" name="vssver.scc" role="mage" />
+   </dir> <!-- /js\magestore\images -->
+   <dir name="Magestore\All\Block">
+    <file md5sum="f9170ff60ad29887fb687084a7818cd4" name="Featurebrand.php" role="magelocal" />
+    <file md5sum="bbcc023689159aa8e6773b2d2847d910" name="Featuredcategory.php" role="magelocal" />
+    <file md5sum="e773b860ca26ba7bfacad29fddf42fb0" name="Featuredproduct.php" role="magelocal" />
+    <file md5sum="fa2acac3873efa7c2952bca258a52be7" name="Specials.php" role="magelocal" />
+    <file md5sum="6fb0e15f0e2584b9ffc07bb166b12e38" name="vssver.scc" role="magelocal" />
+   </dir> <!-- /Magestore\All\Block -->
+   <dir name="Magestore\All\controllers">
+    <file md5sum="4d59045d44d3fb71d24dd5eb40ee1d25" name="IndexController.php" role="magelocal" />
+    <file md5sum="4beb0620ff0cf1ae2e607e613f37dfed" name="vssver.scc" role="magelocal" />
+   </dir> <!-- /Magestore\All\controllers -->
+   <dir name="Magestore\All\etc">
+    <file md5sum="a7416722710fd0f678923fb6aae06cfd" name="config.xml" role="magelocal" />
+    <file md5sum="3b0dddb8f66897b52c9e32cd1c7a9089" name="vssver.scc" role="magelocal" />
+   </dir> <!-- /Magestore\All\etc -->
+   <dir name="Magestore\All\Helper">
+    <file md5sum="d170d01bcba1632fd55d6f5efb794573" name="Data.php" role="magelocal" />
+    <file md5sum="1c0eb3ea0b65a1c64bc0ce7c3b2a6d91" name="vssver.scc" role="magelocal" />
+   </dir> <!-- /Magestore\All\Helper -->
+   <dir name="Magestore\Customnav\Block">
+    <file md5sum="863afeb7382918949b7954005f803f9f" name="Navigation.php" role="magelocal" />
+    <file md5sum="a82c77eed9400e43dd99347b7345aadf" name="vssver.scc" role="magelocal" />
+   </dir> <!-- /Magestore\Customnav\Block -->
+   <dir name="Magestore\Customnav\etc">
+    <file md5sum="aeeeffe1f04f0a77e851e5ddad83d6bc" name="config.xml" role="magelocal" />
+    <file md5sum="ad0388e67f6bb61d0f10399017378641" name="vssver.scc" role="magelocal" />
+   </dir> <!-- /Magestore\Customnav\etc -->
+   <dir name="modules">
+    <file md5sum="d2213167c8cc63bb687cb72e66f343b3" name="Magestore_All.xml" role="mageetc" />
+    <file md5sum="3e97a689aaad4e1b546e24af9e1d2090" name="Magestore_Customnav.xml" role="mageetc" />
+   </dir> <!-- /modules -->
+  </dir> <!-- / -->
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+    <max>6.0.0</max>
+   </php>
+   <pearinstaller>
+    <min>1.6.2</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+</package>

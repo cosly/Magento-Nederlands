@@ -1,0 +1,8 @@
+a:9:{s:7:"attribs";a:2:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.package";s:18:"xsi:schemaLocation";s:80:"http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd";}s:1:"n";s:10:"Mage_Ideal";s:1:"c";s:32:"connect.magentocommerce.com/core";s:2:"ca";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:34:"/Chiara_PEAR_Server_REST/c/Default";}s:8:"_content";s:7:"Default";}s:1:"l";s:27:"Open Software License (OSL)";s:2:"lu";s:42:"http://opensource.org/licenses/osl-3.0.php";s:1:"s";s:25:"iDEAL payment integration";s:1:"d";s:663:"The extension provides iDEAL payment integration. Which enables payment procces through an existing Internet banking product.
+Requires PHP OpenSSL extension to be installed.
+
+Changes from previous release:
+- Added XML notification support for iDEAL Basic
+- Added ability to enter api urls for iDEAL Basic so this extension can be used not only by clients of ING Bank. Urls need to be entered only if you are not client of ING Bank.
+
+Notice: Like provided in documentation for this iDEAL Basic if you will get this notification it still can not guarantee status of your transaction so please make sure to check this in your merchant dashboard before process order.";s:1:"r";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:37:"/Chiara_PEAR_Server_REST/r/Mage_Ideal";}}}

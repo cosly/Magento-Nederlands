@@ -1,0 +1,85 @@
+<?php
+	if(Mage::registry("questions"))
+	{
+		$store_id = Mage::helper("faq")->getStoreId();
+		$category_id = Mage::registry("category_id");
+		$faq_id = Mage::registry("faq_id");
+		
+		
+		$questions = Mage::registry("questions");
+		$category = Mage::getModel("faq/category")
+						->setStoreId($store_id)
+						->load($category_id);
+		
+		
+		
+		$categories = Mage::getModel("faq/category")
+							->setStoreId($store_id)
+							->getCollection()
+						//->addFieldToFilter("status",1)
+						//->setOrder("name","ASC")
+						;
+		$page_title = $this->getPageTitle();
+		
+		$faq = $this->getFaq();
+		
+?>
+<div class="faq clearfix">
+	
+	<div class="page-title">
+		<h2><?php echo $page_title; ?></h2>
+	</div>
+	<form method="get" action="<?php echo(Mage::getBaseUrl() . "faq/search/result/"); ?>" name="faqsearch">
+	<div id="searchform">
+		<label for="keyword">Search FAQ</label><input type="text" name="keyword" id="keyword" size="30" maxlength="30" onfocus="this.value='';"/><a href="javascript:faq_search();" class="btnSearch" title="GO"><ins>GO</ins></a>
+	</div>
+	</form>
+		
+	<br>
+	<?php
+	    
+		if($faq)
+		{
+				echo("<div class='faq_view'>");								
+				echo("<strong>".$faq->getTitle()."</strong></br>");
+				echo("<div class='faq_conent'>". $faq->getDescription()."</div>");
+				echo("</div>");
+			
+		}
+	?>
+	<?php
+		if($faq_id && count($questions) > 1)
+		{		
+		?>
+		<h3><?php echo($this->__('Other Answers in the Category'). ' "'.$category->getName() . '"');?></h3>
+		<?
+		}
+		else if(!$faq_id)
+		{
+		?>
+		<h3><?php echo($this->__('Answers in the Category'). ' "'.$category->getName() . '"');?></h3>
+		<?php
+		}
+		?>
+		
+<div id="list_category" class="clearfix">
+<ul>
+	<?php
+		$index = 1;
+		foreach($questions as $question)
+		{
+			if($question->getFaqId() != $faq_id)
+			{
+				echo("<div>");
+					echo($index . ". <a href='". Mage::getBaseUrl() . $question->getUrlKey() ."'>". $question->getTitle() . "</a><br/>" );
+						$index++;
+				echo("</div>");
+			}
+		}	
+	?>		
+</ul>
+</div>
+</div>
+<?		
+	}
+?>

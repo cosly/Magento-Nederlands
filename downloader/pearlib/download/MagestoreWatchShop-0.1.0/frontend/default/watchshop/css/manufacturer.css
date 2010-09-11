@@ -1,0 +1,69 @@
+.manufacturer_list_head
+{
+	background:url(../images/bkg_left-menu-cat.gif) repeat-x scroll left top transparent;
+	padding:12px 0 16px 30px;
+}
+
+#manufacturer_category_tree{background:url(../images/bkg_left-menu-sub-cat.gif) repeat-x scroll center bottom transparent !important;}
+#manufacturer_category_tree a{ font-size:14px; text-decoration:none;}
+
+#featured_manufacturer li
+{
+	display:inline;
+	margin-right:10px;
+}
+
+#featured_manufacturer li a img
+{
+	margin-top:10px;
+}
+
+#manufacturer_char_filter
+{
+	text-align:center;
+}
+
+#manufacturer_char_filter li
+{
+	display:inline;
+	margin-right:10px;
+	font-weight:bold;
+}
+
+#manufacturer_list
+{
+	line-height:30px;
+	padding-top:30px;
+}
+
+#manufacturer_list li
+{	
+	width:30%;
+	margin-left:2%;
+	float:left;
+		
+}
+
+#manufacturer_category_tree ul
+{
+	line-height:25px;
+	padding-left:20px;
+}
+
+#manufacturer_category_tree ul a.active
+{
+	font-weight:bold;
+}
+
+#manufacturer_left
+{
+	width:218px;
+	float:left;
+	margin-right:20px;
+}
+
+#manufacturer_content
+{
+	width:700px;
+	float:left;
+}

@@ -1,0 +1,39 @@
+<h3 class="manufacturer_list_head"><?php echo $this->__('Featured Manufacturers') ?></h3>
+
+<?php
+$featuredManufacturers = $this->getFeaturedManufacturer();
+
+
+echo("<ul id='featured_manufacturer'>");
+foreach($featuredManufacturers as $featuredManufacturer)
+{
+	echo("<li><a href='". $this->getManufacturerDetailUrl($featuredManufacturer)."'>".$this->getManufacturerImage($featuredManufacturer)."</a></li>");
+}
+echo("</ul>");
+?>
+
+<br><br>
+<h3 class="manufacturer_list_head"><?php echo $this->__('All Manufacturers') ?></h3>
+
+<?php echo $this->generateListCharacter();?>
+
+<ul id="manufacturer_list">
+	<?php
+		
+		$manufacturers = $this->getManufacturers();
+		if(count($manufacturers))
+		{
+			foreach($manufacturers as $manufacturer)
+			{
+				echo("<li><a href='". $this->getManufacturerDetailUrl($manufacturer) . "' title='" . $manufacturer->getName() . "'>" .$manufacturer->getData('name_store') ."</a></li>");
+			}	
+		}
+		else
+		{
+			echo $this->__('Manufacturer not found!');
+		}
+	?>
+	
+</ul>
+                
+        

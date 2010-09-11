@@ -1,0 +1,108 @@
+/*
+
+Example CSS file for creating tabs using tabs.js.
+Created by Rob Allen (rob at akrabat dot com)
+Based on the CSS code from Silverorange Labs at :
+http://labs.silverorange.com/archives/2003/september/simplecsstabs
+
+*/
+#tab-container{padding:50px 0 0;}
+.tab-content {
+	background:url(../images/tab_content.gif) top left repeat-y;
+	color: black;
+	padding: 0.5em;
+	min-height:300px;
+    height:auto !important;
+    height:300px;
+}
+
+
+.tab-header {
+	position: relative;
+	height: 3em;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	/*background:url(../images/tab_list_bg.gif) top left no-repeat;*/
+	width:667px; height:10px;
+}
+.tab-footer {
+	position: relative;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	background:url(../images/tabs-footer.gif) top left no-repeat;
+	width:667px; height:11px;
+}
+.tab-header ul.tab-list {
+	margin: 0;
+	/*padding: 0 0 3px;*/
+	position: absolute;
+	bottom: 0;
+	width:667px;
+	/* a width is required for Opera, older Mozilla browsers, and Konqueror browsers */
+}
+
+.tab-header ul.tab-list li  {
+	list-style: none;
+	margin: 0;
+	float:left;
+	margin: 0 4px 0 5px;
+}
+#tab-container-tab-0{display:inline; margin-left:0;}
+#tab-container-tab-3{ margin-right:0;}
+.tab-header ul.tab-list a,.tab-header ul.tab-list span,.tab-header ul.tab-list a.tab-active {
+	float: left;
+	text-align: center;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #333;
+	background:url(../images/tabs_pv.gif) top left no-repeat; 
+	height:59px;
+	width:160px;
+	line-height:20px;
+}
+.tab-header ul.tab-list a,.tab-header ul.tab-list span,.tab-header ul.tab-list a.inactive {
+	float: left;
+	text-align: center;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #ffffff;
+	background:url(../images/tabs_pv.gif) top left no-repeat; 
+	height:59px;
+	width:160px;
+	line-height:60px;
+	font-weight:bold;
+}
+.tab-header ul.tab-list span,.tab-header ul.tab-list a.tab-active,.tab-header ul.tab-list a.tab-active:hover {
+	background:url(../images/tabs_pv_active.gif) top left no-repeat ;
+	color: black;
+	margin-top: 0;
+	height:59px;
+	width:160px;
+	z-index:999;
+	position:relative;
+	line-height:60px;
+	font-size:15px;
+	font-weight:bold;
+}
+.inactive {	
+	}
+/* a link in a background tab */
+.tab-header ul.tab-list a {
+	border-bottom: none;
+}
+
+/* hover on a background tab */
+.tab-header ul.tab-list a:hover {
+	margin-top: 0;
+	color: black;
+	background:url(../images/tabs_pv_active.gif) top left no-repeat ;
+}
+
+.tab  /* the heading that became the li */
+{
+	display: none;
+}
+.tab-content .add-tag-box .input-box{float:left; padding-top:2px;}
+.tab-content .std{ float:left; width:660px;}
+
+* html .tab-header ul.tab-list {margin: 0;position: absolute;bottom: -1px;}

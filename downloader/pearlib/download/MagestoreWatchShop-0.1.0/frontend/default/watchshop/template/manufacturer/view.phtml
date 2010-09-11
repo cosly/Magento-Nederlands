@@ -1,0 +1,31 @@
+<?php
+	
+	$manufacturer = $this->getManufacturer();
+	
+	if($manufacturer){
+?>
+
+<div id="manufacturer_left">
+	<h3 class="manufacturer_list_head"><?php echo $this->__('Product Catalog') ?></h3>
+		<div id="manufacturer_category_tree">
+		<?php echo $this->generateCategoryTree($manufacturer);?>
+	</div>
+</div>
+
+<div id="manufacturer_content">
+<h3><?php echo $manufacturer->getData('name_store');?></h3>
+<?php echo $this->getManufacturerImage($manufacturer);?>
+<p><?php echo $manufacturer->getDescriptionShort();?></p>
+<p><?php echo $manufacturer->getDescription();?></p>
+
+
+
+<br>
+<?php 
+
+	echo $this->getProductListHtml() ;
+    } else {
+		echo '<h3>'. $this->__('Not found manufacturer !') .'</h3>';
+	}
+?>
+</div>

@@ -1,0 +1,39 @@
+<?php
+/**
+ * Part of SilverFramework for Magento.
+ * Copyright (c) 2010 Trollweb Solutions AS, SilverFramework.com.
+ */
+?>
+<?php
+$_silverHelper = Mage::helper('silverframework/silver'); 
+$_silverFooterText = $_silverHelper->settings['settings']['footer_text'];
+
+?>
+
+<div class="footer-container">
+    <div class="footer">
+       <?php echo $this->getChildHtml('right.newsletter') ?>    
+	   
+	   <?php if($_silverFooterText != ''): ?>
+	      <?php echo $_silverFooterText; ?>
+       <?php else: ?>
+	   	   <p class="footertext"><strong>About SilverFramework for Magento</strong><br />This is the footer text of the professional <a href="http://www.silverthemes.com" title="Magento themes">Magento theme framework</a> from <a href="http://www.silverframework.com">SilverFramework.com</a>. You can modify this text directly from the SilverFramework Backend module for Magento. You can also add any kind of HTML code in it, like <strong>strong</strong> text, <a href="http://www.silverframework.com">useful links</a> and even images. To find our more, visit <a href="http://www.silverframework.com">SilverFramework.com</a> today.</p>
+	   <?php endif; ?>
+	
+	
+	<hr></hr>
+    <div class="minilogos">
+    	<!--<a href="http://www.trollweb.no"><img src="<?php //echo $this->getSkinUrl(''); ?>/images/trollweb.png" alt="Trollweb Solutions Magento" title="Trollweb Solutions Magento" /></a>-->
+        <!--<a href="http://www.bbs.no"><img src="<?php //echo $this->getSkinUrl(''); ?>/images/bbs.png" alt="BBS" title="BBS" /></a>-->
+        <a href="http://http://www.mastercard.com/us/personal/en/cardholderservices/securecode/index.html"><img src="<?php echo $this->getSkinUrl(''); ?>/images/mastercard-securecode.png" alt="MasterCard SecureCode" title="MasterCard SecureCode" /></a>
+        <a href="http://www.visa.com"><img src="<?php echo $this->getSkinUrl(''); ?>/images/visa.png" alt="Visa" title="Visa" /></a>
+        <a href="http://www.mastercard.com"><img src="<?php echo $this->getSkinUrl(''); ?>/images/mastercard.png" alt="Mastercard" title="Mastercard" /></a>
+        <a href="http://www.paypal.com"><img src="<?php echo $this->getSkinUrl(''); ?>/images/paypal.png" alt="PayPal" title="PayPal" /></a>
+<a href="http://www.visa.com"><img src="<?php echo $this->getSkinUrl(''); ?>/images/verified-by-visa.png" alt="Verified by Visa" title="Verified by Visa" /></a>        
+        <a href="http://www.silverframework.com"><img src="<?php echo $this->getSkinUrl(''); ?>/images/silverframework.png" alt="SilverFramework Magento theme for Magento" title="SilverFramework Magento theme for Magento" /></a>
+    </div>
+
+    <address><?php echo $this->getCopyright() ?></address>
+        
+    </div>
+</div>

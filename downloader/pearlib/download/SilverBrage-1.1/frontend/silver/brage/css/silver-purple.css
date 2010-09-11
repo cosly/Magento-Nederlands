@@ -1,0 +1,35 @@
+
+/* Brage Purple - #7309aa */
+
+.customer-center {background-color: #dedede;}
+
+#nav-container,
+.breadcrumb-and-search,
+#nav li a:hover span,
+#nav li.active a,
+#nav li.over a,
+#nav li.over a span,
+#nav li a:hover,
+#nav li.over a span,
+#nav li.active a span,
+#nav li ul {
+	background-color:#7309aa;
+}
+
+.header-container {
+	border-top: 7px solid #7309aa;
+}
+.customer-center > ul,
+#nav li a,
+.form-search .button,
+.sidebar .block .block-title {
+	color: #7309aa;
+}
+
+.sidebar .block {
+	border-top-color: #7309aa;
+	border-bottom-color: #7309aa;
+}
+.footer, .opc .step-title {
+	border-top-color: #7309aa;
+}

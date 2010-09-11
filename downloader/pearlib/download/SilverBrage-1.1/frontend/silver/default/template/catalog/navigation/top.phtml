@@ -1,0 +1,180 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2009 Irubin Consulting Inc. DBA Varien (http://www.varien.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @see Mage_Catalog_Block_Navigation
+ */
+?>
+
+<?php
+
+$_silverHelper = Mage::helper('silverframework/silver');
+$_cms_links = $_silverHelper->getCmslinks();
+$_cms_array = array();
+$_last_items = array();
+$_first_items = array();
+
+$_category_count = $this->getStoreCategories()->count();
+
+foreach($_cms_links as $link)	{
+	if(isset($_cms_array[$link->getSort()]) && is_array($_cms_array[$link->getSort()]))	{
+		$_cms_array[$link->getSort()][] = $link;
+		
+		if($link->getSort() > $_category_count)	{
+			$_last_items[] = $link;
+		}
+		
+		if($link->getSort() < 0)	{		
+			$_first_items[] = $link;
+		}
+		
+	}
+	else	{
+		$_cms_array[$link->getSort()] = array($link);
+		
+		if($link->getSort() > ($_category_count-1))	{
+			$_last_items[] = $link;
+		}
+				
+		if($link->getSort() < 0)	{		
+			$_first_items[] = $link;
+		}				
+	}
+}
+
+//echo '<pre>' . print_r($link,1) . '</pre>';
+//echo '<pre>' . print_r($_cms_array,1) . '</pre>';
+
+$_counter = 0;
+
+
+function renderItem($item, $helper, $block)
+{
+	$_menu = '';
+	$children = $helper->getCmslinksChildren($item->getCmslinkId());
+	$childrencounter = 0;
+	$_buffer = '';		
+	$_temp = $childrencounter + 50;
+
+	if(substr($item->getLink(), 0, 7) == 'http://')	{
+		$link = $item->getLink();
+	}
+	else	{
+		$link = $block->getUrl($item->getLink());
+	}
+	
+	if($children->count())	{
+		$_menu .= '<li class="level0 nav-' . $_temp . ' parent" onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)"><a href="' . $link . '"><span>' . $item->getName() . '</span></a>';
+	}
+	else	{
+		$_menu .= '<li><a href="' . $link . '"><span>' . $block->__($item->getName()) . '</span></a>';
+	}
+	
+	
+	
+	if($children->count())	{
+	
+		$_buffer = "<ul class=\"level0\">";
+		
+		
+		foreach($children as $child)	{
+		
+			if(substr($child->getLink(), 0, 7) == 'http://')	{
+				$child_link = $child->getLink();
+			}
+			else	{
+				$child_link = $block->getUrl($child->getLink());
+			}
+							
+			$_class = '';
+				
+			if(($childrencounter+1) == $children->count())	{
+				$_class = ' last';
+			}
+		
+			$_buffer .= "<li class=\"level1 nav-{$_temp}-{$childrencounter}{$_class}\">";
+			$_buffer .= "<a href=\"{$child_link}\"><span>{$child->getName()}</span></a>";
+			$_buffer .= '</li>';
+			$childrencounter ++;
+		}
+		
+		$_buffer .= "</ul>";
+		
+		$childrencounter++;
+	
+	}
+	
+	$_menu .= $_buffer;
+
+	return $_menu;
+}
+
+?>
+<?php $_menu = ''?>
+<?php
+
+	if($_counter == 0)	{	
+		foreach($_first_items as $item)	{
+			$_menu .= renderItem($item, $_silverHelper, $this);
+		}
+	}	
+
+
+?>
+<?php foreach ($this->getStoreCategories() as $_category): ?>
+	<?php
+
+	if(isset($_cms_array[$_counter]))	{
+		foreach($_cms_array[$_counter] as $item)	{
+			$_menu .= renderItem($item, $_silverHelper, $this);
+		}
+	}
+	
+	$_counter++;
+	
+	
+	?>
+    <?php $_menu .= $this->drawItem($_category) ?>
+	<?php
+	
+	if($_counter == $this->getStoreCategories()->count())	{	
+		foreach($_last_items as $item)	{
+			$_menu .= renderItem($item, $_silverHelper, $this);
+		}
+	}	
+	
+	?>
+<?php endforeach ?>
+<?php if ($_menu): ?>
+<div class="nav-container">
+    <ul id="nav">
+        <?php echo $_menu; ?>
+    </ul>
+</div>
+<?php endif; ?>

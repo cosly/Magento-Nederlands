@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Trollweb_SilverFrameworkBrage>
+			<version>0.0.1</version>
+		</Trollweb_SilverFrameworkBrage>
+	</modules>
+	
+	<global>
+		<models>
+			<silverframeworkbrage>
+				<class>Trollweb_SilverFrameworkBrage_Model</class>
+			</silverframeworkbrage>
+		</models>
+	</global>
+</config>

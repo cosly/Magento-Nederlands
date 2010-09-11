@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+    </default>
+    <all_index_specials>
+		<reference name="root">
+			<action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+		</reference>
+        <reference name="content">
+            <block type="all/specials" name="specials" template="catalog/product/list.phtml" />
+        </reference>
+    </all_index_specials>
+</layout>

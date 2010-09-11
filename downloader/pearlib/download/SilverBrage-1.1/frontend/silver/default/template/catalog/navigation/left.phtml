@@ -1,0 +1,414 @@
+<?php
+/** Copyright 2010 SilverFramework.com. All rights Reserved.
+	For more details visit www.silverframework.com. **/
+?>
+<?php
+
+$_silverHelper = Mage::helper('silverframework/silver');
+
+$request = $this->getRequest();
+$module = $request->getModuleName();
+$_use_ajax = $_silverHelper->settings['settings']['use_ajax'];
+
+if($module != 'catalog' && !$_silverHelper->settings['settings']['show_non_catalog'])	return;
+
+function getRootCategories()
+{
+	$store = Mage::app()->getStore();
+	$category_id = $store->getRootCategoryId();
+	
+	$model = Mage::getModel('catalog/category');
+	$model->load($category_id);
+	
+	$_categories = $model->getChildrenCategories();
+	
+	return $_categories;
+}
+
+function getCurrentCategory()
+{
+	if (!Mage::registry('current_category')) return;
+	return Mage::registry('current_category');
+}
+
+function showSubCategories($parent, $level, $max_levels, $object, $toggle_menu, $use_ajax)
+{
+	$subcategories = $parent->getChildrenCategories();
+	if($subcategories->count() > 0)	{
+		
+		$skipBecauseOfAjax = false;
+		
+		if($level > $max_levels && $toggle_menu && !$object->isCategoryActive($parent))	{
+			$invisibleStyle = ' style="display: none;" ';
+			$invisible = true;
+			
+			if($use_ajax)	{
+				return;
+			}
+		}
+		else	{
+			$invisibleStyle = '';
+			$invisible = false;
+		}
+	
+	
+	
+		echo '<ul ' . $invisibleStyle . ' class="silverframework-leftmenu silverframework-leftmenu-level'. $level . '">';
+		foreach($subcategories as $child_category)	{
+		
+			$classNames = array();
+		
+			if($toggle_menu)	{
+				$classNames[] = 'silverframework-leftmenu-togglechildren';
+			}
+		
+			if($object->isCategoryActive($child_category))	{
+				$classNames[] = 'silverframework-leftmenu-active';
+				$toggle_text = '<img class="silverframework-leftmenu-toggleicon" src="/skin/frontend/silver/default/images/toggle-small-collapse.png" alt="" />';
+			}
+			else	{
+				$classNames[] = 'silverframework-leftmenu-inactive';
+				$toggle_text = '<img class="silverframework-leftmenu-toggleicon" src="/skin/frontend/silver/default/images/toggle-small-expand.png" alt="" />';
+			}
+			
+			if($child_category->getChildrenCategories()->count() > 0) {
+				$classNames[] = 'silverframework-leftmenu-haschildren';
+			}
+			else	{
+				$classNames[] = 'silverframework-leftmenu-nochildren';
+			}
+			
+		
+			echo '<li id="silverframework-leftnav-parent-' . $child_category->getId() . '" class="' . implode(' ',$classNames) . '">';
+			
+			
+			if($toggle_menu)	{
+				if($child_category->getChildrenCategories()->count() > 0) {
+					echo '<a href="' . $object->getCategoryUrl($child_category) . '" class="silverframework-leftmenu-togglelink">' . $toggle_text . '</a>';
+				}
+				else	{
+					
+				}
+			}			
+			
+			echo '<a href="' . $object->getCategoryUrl($child_category) . '">';
+			
+			echo $child_category->getName();
+			
+			echo '</a>';
+			
+			if($level < $max_levels || $object->isCategoryActive($child_category) || $toggle_menu)	{
+				showSubCategories($child_category, ($level+1), $max_levels, $object, $toggle_menu, $use_ajax);
+			}
+			
+			echo '</li>';
+		}
+		echo '</ul>';
+	}
+}
+
+?>
+
+<div class="block block-layered-nav">
+    <div class="block-title">
+        <strong><span><?php echo $this->__('Browse By') ?></span></strong>
+    </div>
+    <div class="block-content" id="silverframework-leftmenu-container">
+        <dl id="narrow-by-list2">
+            <dt><?php echo $this->__('Category') ?></dt>
+			<dd>
+<?php
+
+
+
+
+$category_levels = $_silverHelper->settings['settings']['category_levels'];
+if($category_levels == '')	{
+	$category_levels = 1;
+	//$category_levels = 1;
+}
+
+$toggle_menu = $_silverHelper->settings['settings']['toggle_menu'];
+if($toggle_menu == '')	{
+	$toggle_menu = false;
+}
+
+$toggle_link_takeover = $_silverHelper->settings['settings']['toggle_link_takeover'];
+if($toggle_link_takeover == '')	{
+	$toggle_link_takeover = false;
+}
+
+
+$store_categories = getRootCategories();
+$current_category = getCurrentCategory();
+
+//$toggle_menu = true;
+//$toggle_menu_levels = 2;
+//$toggle_link_takeover = false;
+
+echo '<ul class="silverframework-leftmenu-level1">';
+foreach($store_categories as $category)	{
+
+	$classNames = array();
+
+	if($toggle_menu)	{
+		$classNames[] = 'silverframework-leftmenu-togglechildren';
+	}
+
+	if($this->isCategoryActive($category))	{
+		$classNames[] = 'silverframework-leftmenu-active';
+	}
+	
+	if($category->getChildrenCategories()->count() > 0) {
+		$classNames[] = 'silverframework-leftmenu-haschildren';
+	}
+	else	{
+		$classNames[] = 'silverframework-leftmenu-nochildren';
+	}
+	
+
+	echo '<li id="silverframework-leftnav-parent-' . $category->getId() . '" class="' . implode(' ',$classNames) . '">';
+	
+	if($toggle_menu)	{
+		if($this->isCategoryActive($category) || $category_levels > 1)	{
+			$toggle_text = '<img class="silverframework-leftmenu-toggleicon" src="' . $this->getSkinUrl('images/toggle-small-collapse.png') . '" alt="" />';
+		}
+		else	{
+			$toggle_text = '<img class="silverframework-leftmenu-toggleicon" src="' . $this->getSkinUrl('images/toggle-small-expand.png') . '" alt="" />';
+		}
+		if($category->getChildrenCategories()->count() > 0) {
+			echo '<a href="' . $this->getCategoryUrl($category) . '" class="silverframework-leftmenu-togglelink">' . $toggle_text . '</a>';
+		}
+		else	{
+			
+		}
+	}
+	
+	echo '<a href="' . $this->getCategoryUrl($category) . '">';
+	echo $category->getName();
+	echo '</a>';
+	
+	if($category_levels > 1 || $this->isCategoryActive($category) || $toggle_menu)	{
+		showSubCategories($category, 2, $category_levels, $this, $toggle_menu, $_use_ajax);	
+	}
+			
+	echo '</li>';
+}
+echo '</ul>';
+?>
+
+
+        </dl>
+        <script type="text/javascript">decorateDataList('narrow-by-list2')</script>
+    </div>
+</div>
+
+
+<script>
+
+var SilverframeworkNavigation = Class.create({
+	initialize: function() {
+		this.id = 'silverframework-leftmenu-container';
+		this.container = $(this.id);
+		this.loading = false;
+	},
+		
+	positionLoading: function() {
+		var containerPosition = this.container.positionedOffset();
+		
+		this.loading.setStyle({
+			left: containerPosition.left + 'px',
+			top: containerPosition.top + 'px',
+			width: this.container.getWidth() + 'px',
+			height: this.container.getHeight() + 'px'
+		});
+	},
+		
+	showLoading: function() {
+		
+		
+		if(!this.loading)	{
+			this.loading = new Element('div', {
+			});
+			
+			this.loading.addClassName('silverframework-leftmenu-loading');
+			
+			this.loading.innerHTML = '&nbsp;';
+			this.positionLoading();
+			
+			document.body.appendChild(this.loading);
+		}
+		else	{
+			this.positionLoading();
+			this.loading.show();	
+		}
+	},
+	
+	hideLoading: function() {
+		this.loading.hide();
+	}
+});
+
+
+var navigation;
+document.observe('dom:loaded', function() {	
+		
+	navigation = new SilverframeworkNavigation();
+		
+	<?php if($toggle_link_takeover): ?>
+	var search_string = '.silverframework-leftmenu-togglechildren a';
+	<?php else: ?>
+	var search_string = '.silverframework-leftmenu-togglechildren a.silverframework-leftmenu-togglelink';
+	<?php endif; ?>
+		
+	<?php if($_use_ajax): ?>
+	var use_ajax = true;
+	<?php else: ?>
+	var use_ajax = false;
+	<?php endif; ?>
+		
+	var leftmenuClickFunction = function(search_string)	{
+		
+		return function(e) {
+		
+		
+		/* Search for hidden UL */		
+		var ul = $(e.element().up('li')).down('ul');
+		var element = e.element();
+		
+		if(typeof ul != 'undefined')	{
+			e.preventDefault();
+			
+			var visibility_before_function = ul.visible();
+			
+			new Effect.toggle(ul, 'slide', { duration: 0.2 });
+			
+			/* Search for toggle link for +- */
+			var search = $(e.element().up('li')).select('a.silverframework-leftmenu-togglelink');
+			if(search.length > 0)	{
+				var link = search[0];
+				
+				if(!ul.visible())	{
+					link.update('<img src="<?php echo $this->getSkinUrl('images/toggle-small-collapse.png'); ?>" border="0" class="silverframework-leftmenu-toggleicon" />');
+				}
+				else	{
+					link.update('<img src="<?php echo $this->getSkinUrl('images/toggle-small-expand.png'); ?>" border="0" class="silverframework-leftmenu-toggleicon" />');
+				}
+			}
+		}
+		else	{
+
+			if(use_ajax)	{
+				
+				var parent_li = e.element().up('li');
+				var parent_ul = parent_li.up('ul');
+				var temp = parent_li.id.split('silverframework-leftnav-parent-');
+				
+				if(parent_li.hasClassName('silverframework-leftmenu-nochildren'))	{
+					return;
+				}
+				
+				e.preventDefault();
+				
+				parent_li.select('a.silverframework-leftmenu-togglelink').first().update('<img src="<?php echo $this->getSkinUrl('images/toggle-small-collapse.png'); ?>" border="0" class="silverframework-leftmenu-toggleicon" />');
+				
+				
+				var temp2 = parent_ul.className.split('silverframework-leftmenu-level');
+				
+				if(temp2.length == 2)	{
+					var parent_level = parseInt(temp2[1]);
+					var new_level = parent_level + 1;
+				}
+				
+				if(temp.length == 2)	{
+					var category_id = temp[1];
+					var url = '<?php echo $this->getUrl('silverframework/ajax/getCategoryChildren'); ?>?category_id=' + category_id;
+					
+					// Start loading here
+					navigation.showLoading();
+					
+					new Ajax.Request(url, {
+						method: 'get',
+						evalJSON: 'force',
+						onSuccess: function(transport) {
+					
+							navigation.hideLoading();
+					
+							var children = transport.responseJSON;
+					
+							var new_list = new Element('ul', {
+								style: 'display: none;'
+							});
+					
+							new_list.addClassName('silverframework-leftmenu silverframework-leftmenu-level' + new_level);
+					
+							for(var x=0; x < children.length; x++)	{
+							
+								var link = new Element('a', {
+									href: children[x].url
+								}).update(children[x].name);
+								
+								link.addClassName('silverframework-toggle-link');
+								
+								var li = new Element('li', {
+									id: 'silverframework-leftnav-parent-' + children[x].id 
+								});
+								
+								li.addClassName('silverframework-leftmenu-inactive silverframework-leftmenu-togglechildren');
+								
+								if(parseInt(children[x].children) > 0)	{
+									var toggle_link = new Element('a', {
+										href:children[x].url
+									});
+									
+									toggle_link.addClassName('silverframework-leftmenu-togglelink');
+									
+									var toggle_contents = new Element('img', {
+										src: '/skin/frontend/silver/default/images/toggle-small-expand.png' 
+									});
+									
+									toggle_contents.addClassName('silverframework-leftmenu-toggleicon');
+									
+									toggle_link.appendChild(toggle_contents);
+									
+									
+									
+									
+									toggle_link.observe('click', leftmenuClickFunction(search_string));
+									
+									<?php if($toggle_link_takeover): ?>
+									link.observe('click', leftmenuClickFunction(search_string));
+									<?php endif; ?>
+									
+									li.appendChild(toggle_link);
+								
+									li.addClassName('silverframework-leftmenu-haschildren');
+								}
+								else	{
+									//toggle_link.appendChild(document.createTextNode('&nbsp;&nbsp;&nbsp;'));
+									
+									li.addClassName('silverframework-leftmenu-nochildren');
+									
+								}
+								
+								li.appendChild(link);
+								new_list.appendChild(li);
+
+							}
+								
+							parent_li.appendChild(new_list);
+							new Effect.toggle(new_list, 'slide', { duration: 0.2 });
+						}
+					});
+				}
+			}
+			}	
+		}
+	}
+		
+	$$(search_string).invoke('observe', 'click', leftmenuClickFunction(search_string));
+});
+</script>
+
+
+

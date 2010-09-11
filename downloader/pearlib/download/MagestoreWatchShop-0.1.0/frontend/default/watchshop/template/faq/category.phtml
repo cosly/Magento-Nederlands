@@ -1,0 +1,43 @@
+<?php
+	if(Mage::registry("questions"))
+	{
+		$store_id = Mage::helper("faq")->getStoreId();
+		$category_id = Mage::registry("category_id");
+		
+		$category = Mage::getModel("faq/category")
+						->setStoreId($store_id)
+						->load($category_id);
+		
+		$categories = $this->getCategories();
+					
+		
+?>
+
+<div class="block block-faq-category">
+	<div class="block-title">
+		<strong><span><?php echo ($this->__("FAQ Categories"));?></span></strong>
+	</div>	
+	<div class="block-content">
+		<ul>
+		<?php
+			if(count($categories))
+			{
+				foreach($categories as $cat)
+				{
+					if($cat->getCategoryId() == $category_id)
+					{
+						echo("<li><a href='".Mage::getBaseUrl().$cat->getUrlKey()."' title='".$cat->getName()."' class='active'>".$cat->getName()."</a></li>");
+					}
+					else
+					{
+						echo("<li><a href='".Mage::getBaseUrl().$cat->getUrlKey()."' title='".$cat->getName()."'>".$cat->getName()."</a></li>");
+					}	
+				}
+			}
+		?>
+		</ul>
+	</div>	
+</div>	
+<?		
+	}
+?>

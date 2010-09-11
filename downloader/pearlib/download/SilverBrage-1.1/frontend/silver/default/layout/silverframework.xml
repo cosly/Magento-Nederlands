@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+		<reference name="left">			
+			<block type="core/template" after="catalog.leftnav" template="silverframework/callout_left.phtml" name="silverframework-callout-left" />
+			<remove name="left.permanent.callout"></remove>
+        </reference>
+		<reference name="right">
+			<block type="core/template" template="silverframework/callout_right.phtml" name="silverframework-callout-right" />
+			<remove name="right.permanent.callout"></remove>
+        </reference>		
+	</default>
+</layout>

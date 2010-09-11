@@ -1,0 +1,38 @@
+<?php
+	if(Mage::registry("questions"))
+	{
+		$store_id = Mage::helper("faq")->getFaq();
+		$questions = Mage::registry("questions");
+		$keywords = Mage::registry("keywords");
+		
+					
+		
+?>
+<div class="faq clearfix">
+	<div class="page-title">
+		<h2><?php echo($this->__("Search FAQ"));?></h2>
+	</div>
+	<form method="get" action="<?php echo(Mage::getBaseUrl() . "faq/search/result/"); ?>" name="faqsearch" id="faqsearch">
+	<div id="searchform">
+		<label for="keyword">Search FAQ</label><input type="text" name="keyword" id="keyword" size="30" maxlength="30" onfocus="this.value='';" value='<?php echo $keywords?>'/><a href="javascript:faq_search();" class="btnSearch" title="GO"><ins>GO</ins></a>
+	</div>
+	</form>
+	
+	<h3><?php echo $this->__('FAQ Search Results');?></h3>
+	<span><?php echo($this->__('Keywords') . ': "' . $keywords . '" ('. count($questions).' '.$this->__("Matches").')</span>'); ?>
+	<br><br>
+	<?php
+		if(count($questions))
+		foreach($questions as $question)
+		{			
+			echo("<div class='faq_view'>");								
+			echo("<strong>".$question->getTitle()."</strong></br>");
+			echo("<div class='faq_conent'>". $question->getDescription()."</div>");
+			echo("</div>");
+		}
+	?>
+	
+</div>
+<?		
+	}
+?>

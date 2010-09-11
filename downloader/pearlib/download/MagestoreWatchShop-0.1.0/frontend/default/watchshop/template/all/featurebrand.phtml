@@ -1,0 +1,20 @@
+<?php $featurerBrands = $this->getFeatureBrand(); ?>
+<?php if(count($featurerBrands)): ?>
+<div class="brands">
+	<div class="title">
+		<div class="all-brands"><?php echo $this->__('Popular Brands') ?></div>
+		<div class="all-link"><a href="<?php echo $this->getUrl('manufacturer') ?>"><?php echo $this->__('All Brands') ?> &gt;</a></div>
+	</div>
+	<div class="clear"></div>
+	<div class="content">
+		<?php $i=1; ?>
+		<?php $count = count($featurerBrands); ?>
+		<?php foreach($featurerBrands as $featurerBrand): ?>
+		<a <?php if($i == 1){echo 'class="first"';}else{if($i == $count){echo 'class="last"';}} ?> href="<?php echo $this->getUrl($featurerBrand->getUrlKey(), array()); ?>">
+			<img src="<?php echo $this->getManufacturerImage($featurerBrand) ?>" alt="<?php echo $featurerBrand->getName() ?>" />
+		</a>
+		<?php $i++; ?>
+		<?php endforeach; ?>
+	</div>
+</div>
+<?php endif; ?>

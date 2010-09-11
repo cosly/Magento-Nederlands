@@ -1,0 +1,16 @@
+<?php
+$_silverHelper = Mage::helper('silverframework/silver');
+$_share = $_silverHelper->settings['settings']['share_product_page'];
+$_addthis_username = $_silverHelper->settings['settings']['addthis_username'];
+$_sharethis_publisher_id = $_silverHelper->settings['settings']['sharethis_publisher_id'];
+?>
+
+<?php if($_share == 'sharethis'): ?>
+
+<script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=<?php echo $_sharethis_publisher_id; ?>&amp;type=website"></script>
+
+<?php elseif($_share == 'addthis'): ?>
+
+<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;username=<?php echo $_addthis_username; ?>"><img src="http://s7.addthis.com/static/btn/sm-share-en.gif" width="83" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4ba0b11b6f77d3c3"></script>
+
+<?php endif; ?>

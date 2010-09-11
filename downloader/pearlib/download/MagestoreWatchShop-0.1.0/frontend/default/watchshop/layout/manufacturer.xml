@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+		<reference name="head">
+			 <action method="addCss"><stylesheet>css/manufacturer.css</stylesheet></action>
+		</reference>
+    </default>
+    <manufacturer_index_index>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+		<reference name="content">
+            <block type="manufacturer/manufacturer" name="manufacturer" template="manufacturer/manufacturer.phtml" />
+        </reference>
+    </manufacturer_index_index>
+	
+	<manufacturer_index_view>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+		<reference name="content">
+            <block type="manufacturer/view" name="manufacturer.view" template="manufacturer/view.phtml">
+				 <block type="catalog/product_list" name="search_result_list"  template="catalog/product/list.phtml"></block>
+				  <action method="setListCollection"/>
+			</block>
+			
+        </reference>
+    </manufacturer_index_view>
+</layout> 

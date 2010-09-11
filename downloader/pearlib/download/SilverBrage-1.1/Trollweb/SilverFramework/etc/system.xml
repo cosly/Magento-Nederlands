@@ -1,0 +1,466 @@
+<?xml version="1.0"?>
+	<config>
+		<tabs>
+			<silverframework translate="label" module="silverframework">
+				<label>SilverFramework</label>
+				<sort_order>300</sort_order>
+			</silverframework>
+		</tabs>
+		<sections>
+
+			
+			<silverframework_settings translate="label" module="silverframework">
+				<label>Settings</label>
+				<tab>silverframework</tab>
+				<frontend_type>text</frontend_type>
+				<sort_order>3</sort_order>
+				<show_in_default>1</show_in_default>
+				<show_in_website>1</show_in_website>
+				<show_in_store>1</show_in_store>
+				<groups>
+					
+					
+					<navigation translate="label comment">
+						<comment><![CDATA[
+						<div class="custom-options">
+						<p><strong>Navigation settings</strong></p>
+						<p>Below you will find several navigation settings to customize the left- and upper navigation in your store.</p>
+						<br />
+						</div>					
+						]]></comment>
+						<label>Vertical navigation (left)</label>
+						<frontend_type>text</frontend_type>
+						<sort_order>1</sort_order>
+						<show_in_default>1</show_in_default>
+						<show_in_website>1</show_in_website>
+						<show_in_store>1</show_in_store>
+					
+						
+						<fields>
+							<category_levels translate="label">
+								<label>Default category levels depth</label>
+								<frontend_type>text</frontend_type>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+								<sort_order>1</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[Sets the number of category levels that expands by default. 1 = Display main categories, 2 = Display main categories and first sub-category, etc.]]></comment>								
+							</category_levels>
+							<toggle_menu translate="label">
+								<label>Use Javascript expand/collapse</label>
+								<frontend_type>select</frontend_type>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+								<sort_order>2</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[Enable or disable the built-in Javascript expand/collapse functionality on the +/- icons.]]></comment>
+							</toggle_menu>	
+							<toggle_link_takeover translate="label">
+								<label>Toggle expand/collapse on category name</label>
+								<frontend_type>select</frontend_type>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+								<sort_order>3</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[If the Javascript expand/collapse feature is active you can also enable links on the category names in the left menu. Keep in mind this will ONLY allow opening the final sub-category.]]></comment>
+							</toggle_link_takeover>	
+							<show_non_catalog translate="label">
+								<label>Show menu in non-catalog pages</label>
+								<frontend_type>select</frontend_type>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+								<sort_order>4</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[Enable to display the category navigation in all pages (CMS, frontpage, etc) and not only for the category pages. Requires that the pages use the 3column layout.]]></comment>	
+							</show_non_catalog>
+							
+							<use_ajax translate="label">
+								<label>Use AJAX functionality</label>
+								<frontend_type>select</frontend_type>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+								<sort_order>5</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[Load categories with AJAX instead of loading all initially. Very useful for stores with many categories.]]></comment>	
+							</use_ajax>							
+						</fields>
+					</navigation>				
+					
+					<header translate="label comment">
+						<comment><![CDATA[
+						<div class="custom-options">
+						<p><strong>Header settings</strong></p>
+						<p>Below you will find settings to customize the header area of your store.</p>
+						<br />
+						</div>					
+						]]></comment>
+						<label>Header</label>
+						<frontend_type>text</frontend_type>
+						<sort_order>2</sort_order>
+						<show_in_default>1</show_in_default>
+						<show_in_website>1</show_in_website>
+						<show_in_store>1</show_in_store>
+						
+						<fields>
+							<enable_currency_chooser translate="label">
+								<label>Enable currency selector</label>
+								<frontend_type>select</frontend_type>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+								<sort_order>1</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[Enable or disable the currency dropdown in the header section.]]></comment>
+							</enable_currency_chooser>
+							<enable_storeview_chooser translate="label">
+								<label>Enable storeview selector</label>
+								<frontend_type>select</frontend_type>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+								<sort_order>2</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[Enable or disable the StoreView (language) dropdown in the header section.]]></comment>								
+							</enable_storeview_chooser>							
+						</fields>
+					</header>
+
+					<footer translate="label comment">
+						<comment><![CDATA[
+						<div class="custom-options">
+						<p><strong>Footer settings</strong></p>
+						<p>Below you will find settings to customize the footer area of your store.</p>
+						<br />
+						</div>					
+						]]></comment>
+						<label>Footer</label>
+						<frontend_type>text</frontend_type>
+						<sort_order>3</sort_order>
+						<show_in_default>1</show_in_default>
+						<show_in_website>1</show_in_website>
+						<show_in_store>1</show_in_store>
+						
+						<fields>
+							<footer_text translate="label">
+								<label>Custom footer text</label>
+								<frontend_type>textarea</frontend_type>
+								<sort_order>1</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[Write your custom text to be displayed in the footer section. Any HTML code is allowed. If this field is blank a default text will be displayed.]]></comment>								
+							</footer_text>
+						</fields>
+					</footer>					
+					
+					<product translate="label comment">
+						<comment><![CDATA[
+						<div class="custom-options">
+						<p><strong>Product page settings</strong></p>
+						<p>Below you will find settings to customize the product page section of your store.</p>
+						<br />
+						</div>					
+						]]></comment>
+						<label>Product page</label>
+						<frontend_type>text</frontend_type>
+						<sort_order>4</sort_order>
+						<show_in_default>1</show_in_default>
+						<show_in_website>1</show_in_website>
+						<show_in_store>1</show_in_store>
+						<fields>
+							<zoom_type translate="label">
+								<label>Product image zoom</label>
+								<frontend_type>select</frontend_type>
+								<source_model>silverframework/source_zoomtype</source_model>
+								<sort_order>1</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[Select the product image magnifier you would like to use.]]></comment>								
+							</zoom_type>
+							<zoom_captions translate="label">
+								<label>Display captions below product images</label>
+								<frontend_type>select</frontend_type>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+								<sort_order>2</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[Select to display image descriptions below product images when using the Highslide magnifier. Only active if Highslide zoom is used.]]></comment>
+							</zoom_captions>							
+							<zoom_pagination translate="label">
+								<label>Display gallery navigation controls</label>
+								<frontend_type>select</frontend_type>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+								<sort_order>2</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[Select to display navigation controls (prev/next/original size, etc). Only active if Highslide zoom is used.]]></comment>	
+							</zoom_pagination>
+							
+							<highslide_border translate="label">
+								<label>Display borders around main product image</label>
+								<frontend_type>select</frontend_type>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+								<sort_order>3</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[Select to display borders around product images. Only active if Highslide zoom is used.]]></comment>
+							</highslide_border>
+							
+							<share_product_page translate="label">
+								<label>Share product page link on Social networks</label>
+								<frontend_type>select</frontend_type>
+								<source_model>silverframework/source_shareproductpage</source_model>
+								<sort_order>4</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[Whether to display a "Share" link on the product page. Both <a href="http://www.sharethis.com">ShareThis</a> and <a href="http://www.addthis.com">AddThis</a> are supported.]]></comment>
+							</share_product_page>
+							
+							<sharethis_publisher_id>
+								<label>ShareThis Publisher ID</label>
+								<frontend_type>text</frontend_type>
+								<sort_order>5</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[Optionally: Enter your publisher ID with ShareThis to enable tracking/analytics.]]></comment>	
+							</sharethis_publisher_id>
+							
+							<addthis_username translate="label">
+								<label>AddThis username</label>
+								<frontend_type>text</frontend_type>
+								<sort_order>6</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[Optionally: Enter your AddThis username to enable tracking/analytics.]]></comment>	
+							</addthis_username>
+							
+							<tabs_display translate="label">
+								<label>Displaying additional product information</label>
+								<frontend_type>select</frontend_type>
+								<source_model>silverframework/source_tabsdisplay</source_model>
+								<sort_order>7</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[Select whether to use Magento's default way of displaying additional product information or the theme's built-in Javascript-based tabs system.]]></comment>							</tabs_display>					
+						</fields>
+					</product>
+					
+					<product_list translate="label comment">
+						<comment><![CDATA[
+										  <div class="custom-options">
+											  <p><strong>Product list settings</strong></p>
+											  <p>Below you will find settings to customize the product list section of your store.</p>
+											  <br />
+										  </div>					
+										  ]]></comment>
+									  <label>Products listing page</label>
+									  <frontend_type>text</frontend_type>
+									  <sort_order>5</sort_order>
+									  <show_in_default>1</show_in_default>
+									  <show_in_website>1</show_in_website>
+									  <show_in_store>1</show_in_store>
+									  <fields>
+										  <show_toolbar translate="label">
+											  <label>Display toolbar</label>
+											  <frontend_type>select</frontend_type>
+											  <source_model>silverframework/source_productlisttoolbar</source_model>
+											  <sort_order>1</sort_order>
+											  <show_in_default>1</show_in_default>
+											  <show_in_website>1</show_in_website>
+											  <show_in_store>1</show_in_store>
+											  <comment><![CDATA[How to display the toolbar for products listing pages. Only applies to listings based upon the list.phtml template file.]]></comment>								
+										  </show_toolbar>
+
+									  </fields>
+					</product_list>
+					
+					<general translate="label comment">
+						<comment><![CDATA[
+										  <div class="custom-options">
+											  <p><strong>General layout settings</strong></p>
+											 
+											  <br />
+										  </div>					
+										  ]]></comment>
+									  <label>General</label>
+									  <frontend_type>text</frontend_type>
+									  <sort_order>0</sort_order>
+									  <show_in_default>1</show_in_default>
+									  <show_in_website>1</show_in_website>
+									  <show_in_store>1</show_in_store>
+									  <fields>
+										  <font_family translate="label">
+											  <label>Font family</label>
+											  <frontend_type>select</frontend_type>
+											  <source_model>silverframework/source_fontfamily</source_model>
+											  <sort_order>1</sort_order>
+											  <show_in_default>1</show_in_default>
+											  <show_in_website>1</show_in_website>
+											  <show_in_store>1</show_in_store>
+											  <comment><![CDATA[What default font family to use in the store.]]></comment>				
+										  </font_family>
+										  
+									  </fields>
+					</general>
+					
+					<callouts translate="label comment">
+						<comment><![CDATA[Callout help text.]]></comment>
+									  <label>Callouts / Sidebar ads</label>
+									  <frontend_type>text</frontend_type>
+									  <sort_order>0</sort_order>
+									  <show_in_default>1</show_in_default>
+									  <show_in_website>1</show_in_website>
+									  <show_in_store>1</show_in_store>
+									  <fields>
+	  
+										<left_callout_enable translate="label">
+											<label>Enable left callout</label>
+											<frontend_type>select</frontend_type>
+											<source_model>adminhtml/system_config_source_yesno</source_model>
+											<sort_order>1</sort_order>
+											<show_in_default>1</show_in_default>
+											<show_in_website>1</show_in_website>
+											<show_in_store>1</show_in_store>
+											<comment><![CDATA[Enable or disable left callout. Disable it to remove default callout text.]]></comment>				
+										</left_callout_enable>
+								
+										  <left_callout_html translate="label">
+											  <label>Left callout content</label>
+											  <frontend_type>textarea</frontend_type>
+											  <source_model>silverframework/source_fontfamily</source_model>
+											  <sort_order>2</sort_order>
+											  <show_in_default>1</show_in_default>
+											  <show_in_website>1</show_in_website>
+											  <show_in_store>1</show_in_store>
+											  <comment><![CDATA[Any HTML is allowed.]]></comment>				
+										  </left_callout_html>
+										  
+										  <right_callout_enable translate="label">
+											  <label>Enable right callout</label>
+											  <frontend_type>select</frontend_type>
+											  <source_model>adminhtml/system_config_source_yesno</source_model>
+											  <sort_order>3</sort_order>
+											  <show_in_default>1</show_in_default>
+											  <show_in_website>1</show_in_website>
+											  <show_in_store>1</show_in_store>
+											  <comment><![CDATA[Enable or disable right callout. Disable it to remove default callout text.]]></comment>				
+										  </right_callout_enable>
+										  
+										  
+										  <right_callout_html translate="label">
+											  <label>Right callout content</label>
+											  <frontend_type>textarea</frontend_type>
+											  <sort_order>4</sort_order>
+											  <show_in_default>1</show_in_default>
+											  <show_in_website>1</show_in_website>
+											  <show_in_store>1</show_in_store>
+											  <comment><![CDATA[Any HTML is allowed.]]></comment>				
+										  </right_callout_html>
+										  
+									  </fields>
+					</callouts>							
+					
+					
+				</groups>
+			</silverframework_settings>
+			
+			<!--
+			<silverframework_content translate="label" module="silverframework">
+				<label>Content</label>
+				<tab>silverframework</tab>
+				<frontend_type>text</frontend_type>
+				<sort_order>4</sort_order>
+				<show_in_default>1</show_in_default>
+				<show_in_website>1</show_in_website>
+				<show_in_store>1</show_in_store>
+				<groups>
+					<general translate="label comment">
+						<comment><![CDATA[<br />
+							<div class="box">
+								Content settings for SilverFramework.
+							</div>
+							]]>
+						</comment>
+						<label>Content</label>
+						<frontend_type>text</frontend_type>
+						<sort_order>1</sort_order>
+						<show_in_default>1</show_in_default>
+						<show_in_website>1</show_in_website>
+						<show_in_store>1</show_in_store>
+						
+						<fields>
+							<serial translate="label">
+								<label>Serial</label>
+								<frontend_type>text</frontend_type>
+								<sort_order>1</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+							</serial>
+						</fields>
+					</general>
+				</groups>
+			</silverframework_content>
+			-->
+			
+			<silverframework_about translate="label" module="silverframework">
+				<label>License and about</label>
+				<tab>silverframework</tab>
+				<frontend_type>text</frontend_type>
+				<sort_order>5</sort_order>
+				<show_in_default>1</show_in_default>
+				<show_in_website>1</show_in_website>
+				<show_in_store>1</show_in_store>
+				<groups>								
+					<general translate="label comment">
+					<comment><![CDATA[
+					<div class="custom-options">
+					<div class="box">
+					<br /><p class="grand-total">SilverFramework for Magento<br /><b></b></p>
+					<p>Welcome to the SilverFramework module for Magento, the best Magento template available. From this control panel you can customize most parts of the SilverFramework template. If you have any questions is problems please visit the links below to get access to our world-class support around all parts of the system.</p>
+					- <a href="http://www.silverframework.com/support" target="_blank"><strong>SilverFramework support pages</strong></a> <font size=1>(opens in new window)</font><br />
+					- <a href="http://www.silverframework.com/blog" target="_blank"><strong>SilverFramework blog</strong></a> <font size=1>(opens in new window)</font><br />
+					- <a href="http://www.silverframework.com" target="_blank"><strong>Purchase a valid license</strong></a> <font size=1>(opens in new window)</font><br />
+					<br />
+					<p>The SilverFramework for Magento is &copy; 2010 <a href="http://www.silverframework.com">SilverFramework.com</a>.</p>
+					</div>
+					</div>					
+					]]></comment>
+						<label>About SilverFramework</label>
+						<frontend_type>text</frontend_type>
+						<sort_order>1</sort_order>
+						<show_in_default>1</show_in_default>
+						<show_in_website>1</show_in_website>
+						<show_in_store>1</show_in_store>
+						
+
+						<fields>
+							<serial translate="label">
+								<label>Serialnumber</label>
+								<frontend_type>text</frontend_type>
+								<sort_order>1</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+								<comment><![CDATA[Note: If you have several domains/store-levels in your Magento installation you must select each Store in the upper left dropdown (Current Configuration Scope) and type in the licensecode for each of them.]]></comment>									
+						</serial>
+						</fields>
+					</general>
+				</groups>
+			</silverframework_about>			
+			
+		</sections>
+	</config>

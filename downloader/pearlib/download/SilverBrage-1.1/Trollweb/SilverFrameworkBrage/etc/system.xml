@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+		<silverframework translate="label" module="silverframework">
+			<label>SilverFramework</label>
+			<sort_order>300</sort_order>
+		</silverframework>
+	</tabs>
+	<sections>
+
+						  <silverframework_settings>
+							  <groups>
+								  <theme_settings translate="label comment">
+									  <comment><![CDATA[
+														<div class="custom-options">
+															<p><strong>Theme settings</strong></p>
+															<p>Below you can change settings for the individual theme that is running in this SilverFramework install.</p>
+															<br />
+														</div>					
+														]]></comment>
+													<label>Theme settings</label>
+													<frontend_type>text</frontend_type>
+													<sort_order>1</sort_order>
+													<show_in_default>1</show_in_default>
+													<show_in_website>1</show_in_website>
+													<show_in_store>1</show_in_store>
+													
+													<fields>
+														<color translate="label">
+															<label>Color</label>
+															<frontend_type>select</frontend_type>
+															<source_model>silverframeworkbrage/source_colors</source_model>
+															<sort_order>1</sort_order>
+															<show_in_default>1</show_in_default>
+															<show_in_website>1</show_in_website>
+															<show_in_store>1</show_in_store>
+														</color>
+                                        			</fields>
+												</theme_settings>				
+											</groups>
+										</silverframework_settings>
+									</sections>
+								</config>

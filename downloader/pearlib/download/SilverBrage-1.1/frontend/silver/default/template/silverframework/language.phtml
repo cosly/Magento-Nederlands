@@ -1,0 +1,17 @@
+<?php if(count($this->getStores())>1): ?>
+				<li class="silverframework-storeview-chooser"><a href="#"><?php echo $this->__('Language'); ?></a>
+					<div class="silverframework-chooser" style="display: none;">
+						<ul>
+						<?php $_counter = 0; ?>
+						<?php $_count = count($this->getStores()); ?>
+						<?php foreach ($this->getStores() as $_lang): ?>
+							<?php $_selected = ($_lang->getId() == $this->getCurrentStoreId()) ? ' selected="selected"' : '' ?>
+							<li class="<?php if($_counter++ == 0): ?>silverframework-chooser-first <?php elseif($_counter == $_count): ?>silverframework-chooser-last <?php endif; ?><?php if($_selected): ?>silverframework-chooser-selected<?php endif; ?>">
+								<a href="<?php echo $_lang->getCurrentUrl() ?>"><?php echo $this->htmlEscape($_lang->getName()) ?></a>
+							</li>
+	
+						<?php endforeach; ?>	
+						</ul>
+					</div>
+				</li>
+<?php endif; ?>
